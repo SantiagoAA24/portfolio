@@ -7,6 +7,7 @@ import {
   isNoteSlug,
   type NoteSlug,
 } from "@/lib/notes";
+import { buildMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -31,10 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   try {
     const frontmatter = await getNoteFrontmatter(locale, slug);
-    return {
-      title: `${frontmatter.title} · Santiago Acevedo`,
+    return buildMetadata({
+      locale,
+      pathname: `/notes/${slug}`,
+      title: frontmatter.title,
       description: frontmatter.summary,
-    };
+      robots: frontmatter.draft
+        ? { index: false, follow: false }
+        : undefined,
+    });
   } catch {
     return {};
   }

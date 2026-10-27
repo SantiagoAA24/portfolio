@@ -1,5 +1,7 @@
 import { Footer, Header } from "@/components";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
+import { PERSON } from "@/lib/site";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -40,9 +42,21 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return {
-    title: t("title"),
+  const base = buildMetadata({
+    locale,
+    pathname: "/",
+    title: {
+      absolute: t("title"),
+    },
     description: t("description"),
+  });
+
+  return {
+    ...base,
+    title: {
+      default: t("title"),
+      template: `%s · ${PERSON.shortName}`,
+    },
   };
 }
 

@@ -1,5 +1,3 @@
-import { setRequestLocale } from "next-intl/server";
-import { Suspense } from "react";
 import {
   AiDemo,
   Contact,
@@ -9,10 +7,26 @@ import {
   Research,
   Stack,
 } from "@/components/home";
+import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
+import { buildMetadata } from "@/lib/seo";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { Suspense } from "react";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+  return buildMetadata({
+    locale,
+    pathname: "/",
+    title: { absolute: t("title") },
+    description: t("description"),
+  });
+}
 
 export default function Home({ params }: Props) {
   return (
@@ -28,6 +42,7 @@ async function HomeContent({ params }: Props) {
 
   return (
     <main>
+      <PersonJsonLd locale={locale} />
       <Hero />
       <FeaturedWork />
       <AiDemo />

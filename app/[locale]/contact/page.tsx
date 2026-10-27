@@ -1,5 +1,6 @@
 import { ContactPage } from "@/components/contact/ContactPage";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -21,10 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const t = await getTranslations({ locale, namespace: "Contact" });
-  return {
+  return buildMetadata({
+    locale,
+    pathname: "/contact",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default function ContactRoute({ params }: Props) {

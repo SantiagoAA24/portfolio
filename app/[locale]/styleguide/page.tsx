@@ -1,5 +1,22 @@
 import { Button, Card, Chip, Label, Pipeline, Stat } from "@/components";
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 import styles from "./styleguide.module.css";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return buildMetadata({
+    locale,
+    pathname: "/styleguide",
+    title: "Styleguide",
+    description: "Internal design system reference.",
+    robots: { index: false, follow: false },
+  });
+}
 
 const palette = [
   { name: "bg", varName: "--bg" },

@@ -1,5 +1,6 @@
 import { CaseStudyLayout } from "@/components/work/CaseStudyLayout";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import {
   getCase,
   getWorkSlugs,
@@ -30,10 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   try {
     const { frontmatter } = await getCase(locale, slug);
-    return {
-      title: `${frontmatter.title} · Santiago Acevedo`,
+    return buildMetadata({
+      locale,
+      pathname: `/work/${slug}`,
+      title: frontmatter.title,
       description: frontmatter.lead,
-    };
+    });
   } catch {
     return {};
   }

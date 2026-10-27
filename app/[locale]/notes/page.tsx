@@ -1,5 +1,6 @@
 import { NotesListPage } from "@/components/notes/NotesListPage";
 import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -22,10 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const t = await getTranslations({ locale, namespace: "Notes" });
-  return {
+  return buildMetadata({
+    locale,
+    pathname: "/notes",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default function NotesRoute({ params, searchParams }: Props) {

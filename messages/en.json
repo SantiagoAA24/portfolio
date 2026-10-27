@@ -1,7 +1,8 @@
 {
   "Meta": {
     "title": "Santiago Acevedo",
-    "description": "Fullstack engineer building AI products"
+    "description": "Fullstack engineer building AI products",
+    "ogRole": "Fullstack engineer building AI products"
   },
   "Nav": {
     "ariaLabel": "Primary",
@@ -193,7 +194,7 @@
     }
   },
   "Contact": {
-    "metaTitle": "Contact · Santiago Acevedo",
+    "metaTitle": "Contact",
     "metaDescription": "Get in touch for remote fullstack roles where AI is part of the product.",
     "breadcrumbHome": "← home",
     "breadcrumbCurrent": " / contact",
@@ -250,7 +251,7 @@
     }
   },
   "Research": {
-    "metaTitle": "Research · Santiago Acevedo",
+    "metaTitle": "Research",
     "metaDescription": "Quantum machine learning research: arXiv preprint and ICE-9 poster.",
     "breadcrumbHome": "← home",
     "breadcrumbCurrent": " / research",
@@ -353,7 +354,7 @@
     }
   },
   "Notes": {
-    "metaTitle": "Notes · Santiago Acevedo",
+    "metaTitle": "Notes",
     "metaDescription": "Short write-ups on AI and fullstack problems.",
     "breadcrumbHome": "← home",
     "breadcrumbCurrent": " / notes",
