@@ -9,3 +9,7 @@ export type { CardProps } from "./Card";
 export { Pipeline } from "./Pipeline";
 export { Stat } from "./Stat";
 export type { StatProps } from "./Stat";
+export { Header } from "./Header";
+export { Footer } from "./Footer";
+export { SiteNav } from "./SiteNav";
+export { LocaleSwitcher } from "./LocaleSwitcher";

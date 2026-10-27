@@ -81,3 +81,109 @@
   text-transform: uppercase;
   color: var(--text-muted);
 }
+
+/* Site shell — header, nav, locale switch, footer */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-4) var(--container-gutter);
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header__mark {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: var(--radius-0);
+  flex-shrink: 0;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.site-header__cv {
+  padding: var(--space-2) 14px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.site-nav__link {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-nav__link--active {
+  color: var(--accent);
+}
+
+.locale-switch {
+  display: flex;
+  border: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.locale-switch__option {
+  padding: 6px 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.locale-switch__option--active {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.site-footer__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-6) var(--container-gutter);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-muted);
+}

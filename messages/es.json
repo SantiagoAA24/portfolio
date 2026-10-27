@@ -1,0 +1,43 @@
+{
+  "Meta": {
+    "title": "Santiago Acevedo",
+    "description": "Ingeniero fullstack construyendo productos de IA"
+  },
+  "Nav": {
+    "ariaLabel": "Principal",
+    "work": "01 trabajo",
+    "aiDemo": "02 ai-demo",
+    "research": "03 investigación",
+    "stack": "04 stack",
+    "notes": "05 notas",
+    "contact": "06 contacto"
+  },
+  "LocaleSwitch": {
+    "ariaLabel": "Idioma",
+    "en": "EN",
+    "es": "ES",
+    "enAria": "English",
+    "esAria": "Español"
+  },
+  "Header": {
+    "brand": "santiago.acevedo",
+    "cv": "CV ↓"
+  },
+  "Footer": {
+    "copyright": "© 2026 Andres Santiago Acevedo Mancera",
+    "location": "Bogotá, Colombia · UTC−5"
+  },
+  "Home": {
+    "title": "Santiago Acevedo",
+    "lead": "Ingeniero fullstack construyendo productos de IA.",
+    "styleguide": "Abrir styleguide →"
+  },
+  "Stubs": {
+    "researchTitle": "Investigación",
+    "researchBody": "[Contenido de investigación próximamente]",
+    "notesTitle": "Notas",
+    "notesBody": "[Contenido de notas próximamente]",
+    "contactTitle": "Contacto",
+    "contactBody": "[Contenido de contacto próximamente]"
+  }
+}
