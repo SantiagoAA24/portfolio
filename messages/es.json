@@ -44,7 +44,7 @@
         "stackKey": "stack",
         "stackValue": "React · TS · FastAPI",
         "aiKey": "ia",
-        "aiValue": "OpenAI · RAG · [vector DB]",
+        "aiValue": "OpenAI · RAG · Pinecone",
         "researchKey": "research",
         "researchValue": "arXiv:2502.04271",
         "statusKey": "status",
@@ -110,7 +110,7 @@
     "aiDemo": {
       "label": "02 — Demo de IA",
       "title": "Pregúntale a mi portfolio.",
-      "body": "Un asistente RAG pequeño sobre mi CV, proyectos y paper, con OpenAI y [vector DB]. Prueba una pregunta y mira qué fuentes cita.",
+      "body": "Un asistente RAG pequeño sobre mi CV, proyectos y notas, con OpenAI y Pinecone. Prueba una pregunta y mira qué fuentes cita.",
       "terminalTitle": "portfolio-rag",
       "sampleQuestion": "¿Qué ha entregado Santiago con LLMs?",
       "sampleAnswer": "Diseñó y construyó un chatbot impulsado por OpenAI que mezcla búsqueda semántica con consultas estructuradas para responder preguntas y generar reportes, e integró modelos de visión por computadora en interfaces de control industrial.",
@@ -121,7 +121,17 @@
       "inputAria": "Haz una pregunta",
       "inputPlaceholder": "Pregunta sobre mi trabajo…",
       "ask": "Preguntar →",
-      "placeholderNote": "[Demo de IA — RAG interactivo próximamente]"
+      "thinking": "Recuperando contexto…",
+      "emptyAnswer": "No encontré suficiente información en las fuentes del portfolio para responder eso.",
+      "errors": {
+        "rateLimit": "Demasiadas preguntas desde esta red. Vuelve a intentarlo en una hora.",
+        "budget": "Se alcanzó el presupuesto diario de la demo. Vuelve mañana.",
+        "tooLong": "Esa pregunta es demasiado larga. Máximo {max} caracteres.",
+        "validation": "No se pudo enviar esa pregunta. Revisa el texto e inténtalo de nuevo.",
+        "config": "La demo aún no está configurada en este servidor.",
+        "upstream": "El asistente tuvo un error aguas arriba. Inténtalo en un momento.",
+        "unknown": "Algo salió mal. Inténtalo de nuevo."
+      }
     },
     "research": {
       "label": "03 — Investigación",
@@ -147,7 +157,7 @@
       },
       "ai": {
         "title": "IA",
-        "items": ["OpenAI API", "RAG · [vector DB]", "Azure OpenAI", "Visión por computadora"]
+        "items": ["OpenAI API", "RAG · Pinecone", "Azure OpenAI", "Visión por computadora"]
       },
       "infra": {
         "title": "Infra",

@@ -325,6 +325,25 @@
   gap: var(--space-4);
   font-size: 15px;
   line-height: 1.5;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.chatError {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .bubbleUser {
@@ -370,10 +389,28 @@
   padding: 6px 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius-0);
+  background: transparent;
   font-family: var(--font-mono);
   font-size: 12px;
   line-height: 18px;
   color: var(--text-muted);
+  cursor: pointer;
+  text-align: left;
+}
+
+.suggestion:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.suggestion:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.suggestion:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .terminalForm {
@@ -411,7 +448,20 @@
   font-family: var(--font-mono);
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.terminalAsk:disabled {
   cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.terminalAsk:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.terminalInput:disabled {
   opacity: 0.7;
 }
 

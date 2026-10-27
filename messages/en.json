@@ -44,7 +44,7 @@
         "stackKey": "stack",
         "stackValue": "React · TS · FastAPI",
         "aiKey": "ai",
-        "aiValue": "OpenAI · RAG · [vector DB]",
+        "aiValue": "OpenAI · RAG · Pinecone",
         "researchKey": "research",
         "researchValue": "arXiv:2502.04271",
         "statusKey": "status",
@@ -110,7 +110,7 @@
     "aiDemo": {
       "label": "02 — AI demo",
       "title": "Ask my portfolio.",
-      "body": "A small RAG assistant over my CV, projects and paper, built with OpenAI and [vector DB]. Try a question and see which sources it cites.",
+      "body": "A small RAG assistant over my CV, projects and notes, built with OpenAI and Pinecone. Try a question and see which sources it cites.",
       "terminalTitle": "portfolio-rag",
       "sampleQuestion": "What has Santiago shipped with LLMs?",
       "sampleAnswer": "He designed and built an OpenAI-powered chatbot that mixes semantic search with structured queries to answer questions and generate reports, and integrated computer-vision models into industrial control interfaces.",
@@ -121,7 +121,17 @@
       "inputAria": "Ask a question",
       "inputPlaceholder": "Ask about my work…",
       "ask": "Ask →",
-      "placeholderNote": "[AI demo — interactive RAG coming soon]"
+      "thinking": "Retrieving context…",
+      "emptyAnswer": "I could not find enough information in the portfolio sources to answer that.",
+      "errors": {
+        "rateLimit": "Too many questions from this network. Try again in an hour.",
+        "budget": "Daily demo budget reached. Come back tomorrow.",
+        "tooLong": "That question is too long. Keep it under {max} characters.",
+        "validation": "Could not send that question. Check the text and try again.",
+        "config": "The demo is not configured on this server yet.",
+        "upstream": "The assistant hit an upstream error. Try again in a moment.",
+        "unknown": "Something went wrong. Try again."
+      }
     },
     "research": {
       "label": "03 — Research",
@@ -147,7 +157,7 @@
       },
       "ai": {
         "title": "AI",
-        "items": ["OpenAI API", "RAG · [vector DB]", "Azure OpenAI", "Computer vision"]
+        "items": ["OpenAI API", "RAG · Pinecone", "Azure OpenAI", "Computer vision"]
       },
       "infra": {
         "title": "Infra",

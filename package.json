@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ingest": "tsx --env-file=.env scripts/ingest.ts"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^9.1.0",
+    "gray-matter": "^4.0.3",
     "next": "16.4.3",
     "next-intl": "^4.14.9",
     "next-mdx-remote": "^6.0.0",
+    "openai": "^7.45.0",
+    "pdf-parse": "^2.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "resend": "^6.34.1",
@@ -21,11 +26,13 @@
     "@tailwindcss/turbopack": "^4",
     "@types/mdx": "^2.0.14",
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
