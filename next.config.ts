@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  transpilePackages: ["next-mdx-remote"],
   // Do not pipe *.css through @tailwindcss/turbopack: this project uses plain
   // CSS + CSS Modules, and that loader strips module exports (className → undefined).
 };

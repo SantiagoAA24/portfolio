@@ -1,0 +1,125 @@
+---
+title: "Interfaces de control para robots y modelos de visión"
+titleAccent: "robots y modelos de visión"
+lead: "Sistemas fullstack que conectan brazos robóticos y modelos de visión por computadora a interfaces web de control, empaquetadas como apps de escritorio multiplataforma."
+category: "CASO DE ESTUDIO · AUTOMATIZACIÓN INDUSTRIAL"
+order: 2
+role: "Desarrollador fullstack"
+context: "Candelasoft · Automatización industrial"
+metaThird:
+  label: "PERIODO"
+  value: "Ago 2025 — jun 2026"
+stackSummary:
+  - "React"
+  - "FastAPI"
+  - "Electron"
+  - "MQTT"
+builtWith:
+  - "React"
+  - "FastAPI"
+  - "Electron"
+  - "WebSockets"
+  - "MQTT"
+  - "Figma"
+architecture:
+  caption: "Los comandos y datos viajan por REST; los datos en vivo del robot y la visión fluyen en tiempo real. La misma interfaz corre en Linux, macOS y Windows."
+  rows:
+    -
+      - label: "Brazo robótico + cámara"
+      - label: "Modelo de visión"
+        accent: true
+      - label: "FastAPI · hexagonal"
+      - parallel:
+          - label: "REST"
+            accent: true
+          - label: "WebSockets · MQTT"
+            accent: true
+      - label: "UI React · Electron"
+next:
+  kind: "case"
+  slug: "akontrol"
+  label: "SIGUIENTE CASO · 03"
+  title: "Rediseño completo de producto, en solitario"
+contactHeadline: "¿Necesitas que robots e IA encuentren una interfaz limpia?"
+---
+
+<Section id="context" number="01">
+
+## Contexto
+
+En Candelasoft construí sistemas fullstack para automatización industrial, conectando brazos robóticos y modelos de visión por computadora a interfaces web de control. Trabajé en un equipo SCRUM que abarcaba robótica, IA y desarrollo. [Añade qué hacían las máquinas y quién usaba las interfaces.]
+
+</Section>
+
+<Section id="problem" number="02">
+
+## El problema
+
+[Dos o tres oraciones: qué necesitaban controlar y ver los operadores, y por qué tres equipos necesitaban una estructura compartida.]
+
+</Section>
+
+<Section id="built" number="03">
+
+## Qué construí
+
+1. Interfaces web de control que integran brazos robóticos y modelos de visión por computadora
+2. Apps de escritorio multiplataforma con Electron para Linux, macOS y Windows
+3. Frontends de dos proyectos reconstruidos a partir de diseños en Figma
+4. Conexiones a servicios backend por REST y protocolos en tiempo real (WebSockets, MQTT)
+5. Un esquema de base de datos rediseñado que escala entre proyectos, y APIs REST FastAPI sobre una arquitectura híbrida modular y hexagonal
+6. Soporte a una herramienta interna que usa OCR y web scraping para procesar documentos automáticamente
+
+</Section>
+
+<Section id="decisions" number="04">
+
+## Decisiones clave
+
+<Decisions>
+<Callout>
+
+### Un backend híbrido modular y hexagonal
+
+[Explica cómo dio límites claros a los equipos de robótica, IA y desarrollo, y qué costó.]
+
+</Callout>
+<Callout>
+
+### REST y protocolos en tiempo real juntos
+
+[Explica qué va por REST, qué fluye por WebSockets o MQTT, y por qué.]
+
+</Callout>
+<Callout>
+
+### Electron para escritorio
+
+[Explica por qué tenía sentido una app de escritorio aquí, y el trade-off principal.]
+
+</Callout>
+</Decisions>
+
+</Section>
+
+<Section id="outcome" number="05">
+
+## Resultado
+
+<Stats>
+  <Stat value="[00]" caption="[add a measurable result]" />
+  <Stat value="[00]" caption="[add a measurable result]" />
+  <Stat value="[00]" caption="[add a measurable result]" />
+</Stats>
+
+<Label className="case-built-with-label">Hecho con</Label>
+<BuiltWith>
+  <Chip>React</Chip>
+  <Chip>FastAPI</Chip>
+  <Chip>Electron</Chip>
+  <Chip>WebSockets</Chip>
+  <Chip>MQTT</Chip>
+  <Chip>Figma</Chip>
+</BuiltWith>
+
+</Section>

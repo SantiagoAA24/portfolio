@@ -67,7 +67,7 @@
       "caseStudy": "Leer caso de estudio →",
       "items": {
         "intelisoft": {
-          "meta": "01 · Intelisoft · Plataforma de ingeniería del sector energético",
+          "meta": "01 · Plataforma de ingeniería del sector energético",
           "title": "Chatbot de IA para datos empresariales",
           "body": "Diseñado y construido de punta a punta con la API de OpenAI. Combina búsqueda semántica con consultas estructuradas para responder preguntas y generar reportes automáticamente. Actualmente en despliegue sobre Azure.",
           "pipeline": {
@@ -114,7 +114,7 @@
       "terminalTitle": "portfolio-rag",
       "sampleQuestion": "¿Qué ha entregado Santiago con LLMs?",
       "sampleAnswer": "Diseñó y construyó un chatbot impulsado por OpenAI que mezcla búsqueda semántica con consultas estructuradas para responder preguntas y generar reportes, e integró modelos de visión por computadora en interfaces de control industrial.",
-      "citation1": "[1] Intelisoft · chatbot",
+      "citation1": "[1] Chatbot del sector energético",
       "citation2": "[2] Candelasoft · visión",
       "suggestion1": "Cuéntame sobre el paper",
       "suggestion2": "¿Qué stack usa?",
@@ -189,5 +189,26 @@
     "notesBody": "[Contenido de notas próximamente]",
     "contactTitle": "Contacto",
     "contactBody": "[Contenido de contacto próximamente]"
+  },
+  "Work": {
+    "breadcrumbWork": "← trabajo",
+    "architecture": "Arquitectura · simplificada",
+    "onThisPage": "En esta página",
+    "allWork": "← Todo el trabajo",
+    "getInTouch": "Escríbeme →",
+    "cv": "CV · Español ↓",
+    "builtWith": "Hecho con",
+    "meta": {
+      "role": "Rol",
+      "context": "Contexto",
+      "stack": "Stack"
+    },
+    "toc": {
+      "context": "Contexto",
+      "problem": "El problema",
+      "built": "Qué construí",
+      "decisions": "Decisiones clave",
+      "outcome": "Resultado"
+    }
   }
 }

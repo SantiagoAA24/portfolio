@@ -9,6 +9,8 @@ export type { CardProps } from "./Card";
 export { Pipeline } from "./Pipeline";
 export { Stat } from "./Stat";
 export type { StatProps } from "./Stat";
+export { Callout } from "./Callout";
+export type { CalloutProps } from "./Callout";
 export { Header } from "./Header";
 export { Footer } from "./Footer";
 export { SiteNav } from "./SiteNav";

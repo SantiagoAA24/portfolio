@@ -1,0 +1,125 @@
+---
+title: "Control interfaces for robots and vision models"
+titleAccent: "robots and vision models"
+lead: "Fullstack systems that connect robotic arms and computer-vision models to web control interfaces, packaged as cross-platform desktop apps."
+category: "CASE STUDY · INDUSTRIAL AUTOMATION"
+order: 2
+role: "Fullstack developer"
+context: "Candelasoft · Industrial automation"
+metaThird:
+  label: "PERIOD"
+  value: "Aug 2025 — Jun 2026"
+stackSummary:
+  - "React"
+  - "FastAPI"
+  - "Electron"
+  - "MQTT"
+builtWith:
+  - "React"
+  - "FastAPI"
+  - "Electron"
+  - "WebSockets"
+  - "MQTT"
+  - "Figma"
+architecture:
+  caption: "Commands and data travel over REST; live robot and vision data stream in real time. The same interface runs on Linux, macOS and Windows."
+  rows:
+    -
+      - label: "Robotic arm + camera"
+      - label: "Computer-vision model"
+        accent: true
+      - label: "FastAPI · hexagonal"
+      - parallel:
+          - label: "REST"
+            accent: true
+          - label: "WebSockets · MQTT"
+            accent: true
+      - label: "React UI · Electron"
+next:
+  kind: "case"
+  slug: "akontrol"
+  label: "NEXT CASE · 03"
+  title: "A full product redesign, solo"
+contactHeadline: "Need robots and AI to meet a clean interface?"
+---
+
+<Section id="context" number="01">
+
+## Context
+
+At Candelasoft I built fullstack systems for industrial automation, connecting robotic arms and computer-vision models to web control interfaces. I worked in a SCRUM team that spanned robotics, AI and development. [Add what the machines did and who used the interfaces.]
+
+</Section>
+
+<Section id="problem" number="02">
+
+## The problem
+
+[Two or three sentences: what operators needed to control and see, and why three teams needed a shared structure.]
+
+</Section>
+
+<Section id="built" number="03">
+
+## What I built
+
+1. Web control interfaces integrating robotic arms and computer-vision models
+2. Cross-platform desktop apps with Electron for Linux, macOS and Windows
+3. Frontends for two projects rebuilt from Figma designs
+4. Connections to backend services over REST and real-time protocols (WebSockets, MQTT)
+5. A redesigned database schema that scales across projects, and FastAPI REST APIs on a hybrid modular and hexagonal architecture
+6. Support for an internal tool that uses OCR and web scraping to process documents automatically
+
+</Section>
+
+<Section id="decisions" number="04">
+
+## Key decisions
+
+<Decisions>
+<Callout>
+
+### A hybrid modular and hexagonal backend
+
+[Explain how it gave the robotics, AI and dev teams clear boundaries, and what it cost.]
+
+</Callout>
+<Callout>
+
+### REST and real-time protocols together
+
+[Explain what goes over REST, what streams over WebSockets or MQTT, and why.]
+
+</Callout>
+<Callout>
+
+### Electron for the desktop
+
+[Explain why a desktop app made sense here, and the main trade-off.]
+
+</Callout>
+</Decisions>
+
+</Section>
+
+<Section id="outcome" number="05">
+
+## Outcome
+
+<Stats>
+  <Stat value="[00]" caption="[add a measurable result]" />
+  <Stat value="[00]" caption="[add a measurable result]" />
+  <Stat value="[00]" caption="[add a measurable result]" />
+</Stats>
+
+<Label className="case-built-with-label">Built with</Label>
+<BuiltWith>
+  <Chip>React</Chip>
+  <Chip>FastAPI</Chip>
+  <Chip>Electron</Chip>
+  <Chip>WebSockets</Chip>
+  <Chip>MQTT</Chip>
+  <Chip>Figma</Chip>
+</BuiltWith>
+
+</Section>

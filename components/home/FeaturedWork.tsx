@@ -1,8 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { Chip, Pipeline } from "@/components";
+import { Link } from "@/i18n/navigation";
+import { homeKeyToSlug, type HomeWorkKey } from "@/lib/work";
 import styles from "./home.module.css";
 
-const caseKeys = ["intelisoft", "candelasoft", "akontrol"] as const;
+const caseKeys: HomeWorkKey[] = ["intelisoft", "candelasoft", "akontrol"];
 
 export async function FeaturedWork() {
   const t = await getTranslations("Home.work");
@@ -33,12 +35,13 @@ async function WorkCase({
   caseKey,
   isLast,
 }: {
-  caseKey: (typeof caseKeys)[number];
+  caseKey: HomeWorkKey;
   isLast: boolean;
 }) {
   const t = await getTranslations(`Home.work.items.${caseKey}`);
   const tw = await getTranslations("Home.work");
   const chips = t.raw("chips") as string[];
+  const slug = homeKeyToSlug[caseKey];
 
   return (
     <article
@@ -103,9 +106,9 @@ async function WorkCase({
         <p className={`meta ${styles.workOutcome}`}>
           {tw("outcomePrefix")} {tw("outcomePlaceholder")}
         </p>
-        <a className={styles.workLink} href="#">
+        <Link className={styles.workLink} href={`/work/${slug}`}>
           {tw("caseStudy")}
-        </a>
+        </Link>
       </div>
     </article>
   );
