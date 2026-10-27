@@ -23,7 +23,11 @@ export function LocaleSwitcher() {
                 ? "locale-switch__option locale-switch__option--active"
                 : "locale-switch__option"
             }
-            aria-label={code === "en" ? t("enAria") : t("esAria")}
+            aria-label={
+              code === "en"
+                ? `${t("en")}, ${t("enAria")}`
+                : `${t("es")}, ${t("esAria")}`
+            }
             aria-current={active ? "true" : undefined}
           >
             {code === "en" ? t("en") : t("es")}

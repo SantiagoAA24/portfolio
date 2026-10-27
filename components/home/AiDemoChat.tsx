@@ -272,13 +272,20 @@ export function AiDemoChat({ maxInputChars }: Props) {
   return (
     <div className={styles.terminal}>
       <div className={styles.terminalBar}>
-        <span className={styles.terminalDot} />
-        <span className={styles.terminalDot} />
-        <span className={styles.terminalDot} />
+        <span className={styles.terminalDot} aria-hidden />
+        <span className={styles.terminalDot} aria-hidden />
+        <span className={styles.terminalDot} aria-hidden />
         <span className={styles.terminalTitle}>{t("terminalTitle")}</span>
       </div>
 
-      <div className={styles.terminalBody} ref={bodyRef}>
+      <div
+        className={styles.terminalBody}
+        ref={bodyRef}
+        role="log"
+        aria-live="polite"
+        aria-busy={busy}
+        aria-relevant="additions"
+      >
         {!started ? (
           <>
             <div className={styles.bubbleUser}>{t("sampleQuestion")}</div>

@@ -23,7 +23,7 @@ export async function Stack() {
             const accent = col === "ai";
             return (
               <div key={col} className={styles.stackCol}>
-                <div
+                <h3
                   className={
                     accent
                       ? `label ${styles.stackColTitleAccent}`
@@ -31,7 +31,7 @@ export async function Stack() {
                   }
                 >
                   {t(`${col}.title`)}
-                </div>
+                </h3>
                 <ul className={styles.stackList}>
                   {items.map((item) => (
                     <li key={item}>{item}</li>

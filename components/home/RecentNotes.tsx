@@ -32,7 +32,7 @@ export async function RecentNotes() {
               className={`card ${styles.noteCard}`}
             >
               <p className={styles.noteMeta}>{t(`items.${key}.meta`)}</p>
-              <p className={styles.noteTitle}>{t(`items.${key}.title`)}</p>
+              <h3 className={styles.noteTitle}>{t(`items.${key}.title`)}</h3>
             </Link>
           ))}
         </div>

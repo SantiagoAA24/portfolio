@@ -20,6 +20,10 @@
     "enAria": "English",
     "esAria": "Español"
   },
+  "A11y": {
+    "skipToContent": "Saltar al contenido",
+    "opensInNewTab": "(se abre en una pestaña nueva)"
+  },
   "Header": {
     "brand": "santiago.acevedo",
     "cv": "CV ↓"

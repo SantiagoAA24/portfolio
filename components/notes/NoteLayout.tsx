@@ -28,7 +28,10 @@ export async function NoteLayout({
 }: Props) {
   const t = await getTranslations("Notes.article");
 
+  const tA11y = await getTranslations("A11y");
+
   return (
+    <main id="main-content">
     <article className={styles.article}>
       <header className={styles.articleHeader}>
         <div className={styles.measure}>
@@ -50,6 +53,7 @@ export async function NoteLayout({
               width={44}
               height={44}
               className={styles.avatar}
+              sizes="44px"
             />
             <div className={styles.bylineCopy}>
               <div className={styles.bylineName}>{t("authorName")}</div>
@@ -67,6 +71,7 @@ export async function NoteLayout({
               rel="noopener noreferrer"
             >
               {t("shareLinkedIn")}
+              <span className="sr-only"> {tA11y("opensInNewTab")}</span>
             </a>
           </div>
         </div>
@@ -83,6 +88,7 @@ export async function NoteLayout({
               width={72}
               height={72}
               className={styles.authorAvatar}
+              sizes="72px"
             />
             <div className={styles.authorCopy}>
               <div className={styles.authorName}>{t("writtenBy")}</div>
@@ -119,5 +125,6 @@ export async function NoteLayout({
         </div>
       </section>
     </article>
+    </main>
   );
 }

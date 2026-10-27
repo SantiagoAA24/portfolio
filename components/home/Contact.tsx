@@ -7,6 +7,7 @@ const LINKEDIN_URL =
 
 export async function Contact() {
   const t = await getTranslations("Home.contact");
+  const tA11y = await getTranslations("A11y");
   const email = t("email");
 
   return (
@@ -31,10 +32,11 @@ export async function Contact() {
             rel="noopener noreferrer"
           >
             {t("linkedin")}
+            <span className="sr-only"> {tA11y("opensInNewTab")}</span>
           </Button>
-          <Button variant="outline" href="#">
+          <span className="btn btn-outline" aria-disabled="true">
             {t("github")}
-          </Button>
+          </span>
           <Button variant="primary" href="/cv/en.pdf">
             {t("cvEn")}
           </Button>

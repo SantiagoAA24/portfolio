@@ -1,10 +1,5 @@
 import { getPathname } from "@/i18n/navigation";
-import {
-  getSiteUrl,
-  PERSON,
-  personEmailMailto,
-  personImageUrl,
-} from "@/lib/site";
+import { getSiteUrl, PERSON, personImageUrl } from "@/lib/site";
 import { getTranslations } from "next-intl/server";
 
 type Props = {
@@ -22,7 +17,7 @@ export async function PersonJsonLd({ locale }: Props) {
     alternateName: PERSON.shortName,
     url,
     image: personImageUrl(),
-    email: personEmailMailto(),
+    email: PERSON.email,
     jobTitle: t("role"),
     sameAs: [PERSON.linkedInUrl],
     address: {

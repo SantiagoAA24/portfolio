@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function Home({ params }: Props) {
   return (
-    <Suspense fallback={<main />}>
+    <Suspense fallback={<main id="main-content" />}>
       <HomeContent params={params} />
     </Suspense>
   );
@@ -41,7 +41,7 @@ async function HomeContent({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <main>
+    <main id="main-content">
       <PersonJsonLd locale={locale} />
       <Hero />
       <FeaturedWork />

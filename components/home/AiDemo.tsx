@@ -1,4 +1,4 @@
-import { AiDemoChat } from "@/components/home/AiDemoChat";
+import { AiDemoChatLazy } from "@/components/home/AiDemoChatLazy";
 import { getChatMaxInputChars } from "@/lib/rag/env";
 import { getTranslations } from "next-intl/server";
 import styles from "./home.module.css";
@@ -24,7 +24,7 @@ export async function AiDemo() {
           <p className={`body-lg ${styles.aiDemoBody}`}>{t("body")}</p>
         </div>
 
-        <AiDemoChat maxInputChars={maxInputChars} />
+        <AiDemoChatLazy maxInputChars={maxInputChars} />
       </div>
     </section>
   );

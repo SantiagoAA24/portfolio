@@ -27,6 +27,17 @@ export function ContactForm() {
   const websiteId = `${baseId}-website`;
   const statusId = `${baseId}-status`;
 
+  function focusFirstInvalid(errors: FieldErrors) {
+    const order = ["name", "email", "message"] as const;
+    for (const key of order) {
+      if (!errors[key]) continue;
+      const id =
+        key === "name" ? nameId : key === "email" ? emailId : messageId;
+      document.getElementById(id)?.focus();
+      return;
+    }
+  }
+
   function mapZodErrors(
     issues: { path: PropertyKey[]; message: string }[],
   ): FieldErrors {
@@ -62,8 +73,10 @@ export function ContactForm() {
 
     const parsed = contactSchema.safeParse(payload);
     if (!parsed.success) {
-      setFieldErrors(mapZodErrors(parsed.error.issues));
+      const errors = mapZodErrors(parsed.error.issues);
+      setFieldErrors(errors);
       setStatus({ kind: "idle" });
+      focusFirstInvalid(errors);
       return;
     }
 

@@ -12,10 +12,11 @@ const LOOKING_FOR_KEYS = ["remote", "ai", "english"] as const;
 
 export async function ContactPage() {
   const t = await getTranslations("Contact");
+  const tA11y = await getTranslations("A11y");
   const email = t("email");
 
   return (
-    <main className={styles.page}>
+    <main id="main-content" className={styles.page}>
       <header className={styles.hero}>
         <div className={styles.inner}>
           <p className={styles.breadcrumb}>
@@ -25,7 +26,9 @@ export async function ContactPage() {
             {t("breadcrumbCurrent")}
           </p>
           <p className={styles.pageLabel}>
-            <Label accent>{t("label")}</Label>
+            <Label as="span" accent>
+              {t("label")}
+            </Label>
           </p>
           <h1 className={`display-xl ${styles.title}`}>
             {t("titleBefore")}
@@ -44,6 +47,7 @@ export async function ContactPage() {
               width={96}
               height={96}
               className={styles.portrait}
+              sizes="96px"
             />
             <div>
               <div className={styles.fullName}>{t("fullName")}</div>
@@ -83,6 +87,7 @@ export async function ContactPage() {
                   rel="noopener noreferrer"
                 >
                   {t("linkedin")}
+                  <span className="sr-only"> {tA11y("opensInNewTab")}</span>
                 </a>
               </dd>
             </div>

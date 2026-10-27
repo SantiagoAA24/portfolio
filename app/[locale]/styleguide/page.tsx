@@ -103,7 +103,7 @@ const typeStyles = [
 
 export default function StyleguidePage() {
   return (
-    <main className={styles.page}>
+    <main id="main-content" className={styles.page}>
       <Label accent>00 — Design system</Label>
       <h1 className={`h1 ${styles.sectionTitle}`}>Terminal styleguide</h1>
       <p className={`lead ${styles.lead}`}>

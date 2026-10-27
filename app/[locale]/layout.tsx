@@ -14,16 +14,22 @@ import "../globals.css";
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+  // optional: paint LCP with fallback under slow networks instead of waiting on the face
+  display: "optional",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "optional",
+  preload: false,
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  display: "optional",
+  preload: false,
 });
 
 type Props = {
@@ -68,6 +74,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tA11y = await getTranslations({ locale, namespace: "A11y" });
 
   return (
     <html
@@ -76,6 +83,9 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body>
         <NextIntlClientProvider messages={messages}>
+          <a className="skip-link" href="#main-content">
+            {tA11y("skipToContent")}
+          </a>
           <Header />
           {children}
           <Footer />

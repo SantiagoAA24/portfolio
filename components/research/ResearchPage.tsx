@@ -17,9 +17,10 @@ const PRINCIPLE_KEYS = ["first", "measure", "explain"] as const;
 
 export async function ResearchPage() {
   const t = await getTranslations("Research");
+  const tA11y = await getTranslations("A11y");
 
   return (
-    <main className={styles.page}>
+    <main id="main-content" className={styles.page}>
       <header className={styles.hero}>
         <div className={styles.inner}>
           <p className={styles.breadcrumb}>
@@ -86,6 +87,7 @@ export async function ResearchPage() {
                   rel="noopener noreferrer"
                 >
                   {t("publications.arxivCta")}
+                  <span className="sr-only"> {tA11y("opensInNewTab")}</span>
                 </Button>
                 <Button
                   variant="outline"
@@ -94,6 +96,7 @@ export async function ResearchPage() {
                   rel="noopener noreferrer"
                 >
                   {t("publications.pdfCta")}
+                  <span className="sr-only"> {tA11y("opensInNewTab")}</span>
                 </Button>
               </div>
             </Card>

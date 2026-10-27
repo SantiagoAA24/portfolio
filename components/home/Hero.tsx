@@ -37,7 +37,6 @@ export async function Hero() {
             alt={t("portraitAlt")}
             width={200}
             height={200}
-            priority
             className={styles.portrait}
             sizes="200px"
           />

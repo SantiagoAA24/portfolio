@@ -22,7 +22,8 @@
 
 .breadcrumbLink {
   color: var(--accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .breadcrumbLink:focus-visible {

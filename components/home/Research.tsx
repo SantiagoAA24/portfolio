@@ -7,6 +7,7 @@ const ARXIV_URL = "https://arxiv.org/abs/2502.04271";
 
 export async function Research() {
   const t = await getTranslations("Home.research");
+  const tA11y = await getTranslations("A11y");
 
   return (
     <section id="research" aria-labelledby="research-heading">
@@ -35,11 +36,12 @@ export async function Research() {
               rel="noopener noreferrer"
             >
               {t("preprintLink")}
+              <span className="sr-only"> {tA11y("opensInNewTab")}</span>
             </a>
           </Card>
           <div className={styles.posterCard}>
             <p className={`label ${styles.muted}`}>{t("posterLabel")}</p>
-            <p className={styles.posterTitle}>{t("posterTitle")}</p>
+            <h3 className={styles.posterTitle}>{t("posterTitle")}</h3>
           </div>
         </div>
       </div>

@@ -87,6 +87,7 @@ export async function CaseStudyLayout({ slug, frontmatter, children }: Props) {
       : (frontmatter.next.path ?? "/research");
 
   return (
+    <main id="main-content">
     <article className={styles.page}>
       <header className={styles.header}>
         <div className={styles.inner}>
@@ -140,9 +141,9 @@ export async function CaseStudyLayout({ slug, frontmatter, children }: Props) {
       <section className={styles.architectureWrap} aria-labelledby="architecture-heading">
         <div className={styles.inner}>
           <div className={styles.architecture}>
-            <Label id="architecture-heading" className={styles.architectureLabel}>
+            <h2 id="architecture-heading" className={`label ${styles.architectureLabel}`}>
               {t("architecture")}
-            </Label>
+            </h2>
             <div className={styles.architectureRows}>
               {frontmatter.architecture.rows.map((row, rowIndex) => (
                 <ArchitectureFlow
@@ -209,5 +210,6 @@ export async function CaseStudyLayout({ slug, frontmatter, children }: Props) {
         </div>
       </section>
     </article>
+    </main>
   );
 }

@@ -48,6 +48,7 @@ function categoryLabelKey(
 
 export async function NotesListPage({ locale, categoryParam }: Props) {
   const t = await getTranslations("Notes");
+  const tA11y = await getTranslations("A11y");
   const active: NoteCategory | "All" =
     categoryParam && isNoteCategory(categoryParam) ? categoryParam : "All";
 
@@ -56,7 +57,7 @@ export async function NotesListPage({ locale, categoryParam }: Props) {
   const featured = getFeaturedNote(allNotes, active);
 
   return (
-    <main className={styles.page}>
+    <main id="main-content" className={styles.page}>
       <header className={styles.hero}>
         <div className={styles.inner}>
           <p className={styles.breadcrumb}>
@@ -130,6 +131,7 @@ export async function NotesListPage({ locale, categoryParam }: Props) {
               rel="noopener noreferrer"
             >
               {t("linkedin")}
+              <span className="sr-only"> {tA11y("opensInNewTab")}</span>
             </a>
           </Card>
         </div>
