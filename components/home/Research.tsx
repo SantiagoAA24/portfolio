@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Card, Label } from "@/components";
+import { Link } from "@/i18n/navigation";
 import styles from "./home.module.css";
 
 const ARXIV_URL = "https://arxiv.org/abs/2502.04271";
@@ -15,7 +16,9 @@ export async function Research() {
         <div className={styles.researchCopy}>
           <p className={styles.sectionLabel}>{t("label")}</p>
           <h2 id="research-heading" className={`h2 ${styles.sectionTitle}`}>
-            {t("title")}
+            <Link href="/research" className={styles.sectionTitleLink}>
+              {t("title")}
+            </Link>
           </h2>
           <p className={`body-lg ${styles.researchBody}`}>{t("body")}</p>
         </div>

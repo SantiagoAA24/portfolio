@@ -183,12 +183,153 @@
     }
   },
   "Stubs": {
-    "researchTitle": "Investigación",
-    "researchBody": "[Contenido de investigación próximamente]",
-    "notesTitle": "Notas",
-    "notesBody": "[Contenido de notas próximamente]",
     "contactTitle": "Contacto",
     "contactBody": "[Contenido de contacto próximamente]"
+  },
+  "Research": {
+    "metaTitle": "Investigación · Santiago Acevedo",
+    "metaDescription": "Investigación en machine learning cuántico: preprint arXiv y póster ICE-9.",
+    "breadcrumbHome": "← inicio",
+    "breadcrumbCurrent": " / investigación",
+    "label": "INVESTIGACIÓN",
+    "titleBefore": "De estados cuánticos a ",
+    "titleAccent": "código en producción.",
+    "lead": "Antes de construir productos, pasé dos años investigando machine learning cuántico en la Universidad Nacional de Colombia. Aquí está lo que publiqué, y cómo esa forma de pensar marca mi ingeniería.",
+    "stats": {
+      "preprintsValue": "1",
+      "preprintsCaption": "Preprint arXiv",
+      "posterValue": "1",
+      "posterCaption": "Póster internacional · Tenerife",
+      "yearsValue": "2022—25",
+      "yearsCaption": "Investigación en computación cuántica",
+      "degreeValue": "Física",
+      "degreeCaption": "Universidad Nacional de Colombia"
+    },
+    "publications": {
+      "label": "01 — Publicaciones",
+      "title": "Paper y póster.",
+      "paperLabel": "Preprint · arXiv · Enviado el 5 feb 2025",
+      "paperTitle": "Variational decision diagrams for quantum-inspired machine learning applications",
+      "paperAuthors": "Santiago Acevedo-Mancera, Vladimir Vargas-Calderón, Herbert Vinck-Posada",
+      "paperSummary": "[Un resumen en lenguaje claro, en dos o tres oraciones, para alguien que no es físico: qué problema aborda el paper y qué encontraste.]",
+      "arxivCta": "Leer en arXiv →",
+      "pdfCta": "PDF ↓",
+      "posterLabel": "Póster · Conferencia internacional",
+      "posterTitle": "Variational Decision Diagrams Quantum States",
+      "posterBody": "ICE-9: Quantum Information in Spain. Puerto de la Cruz, Tenerife, del 11 al 15 de noviembre de 2024."
+    },
+    "areas": {
+      "label": "02 — Áreas de investigación",
+      "title": "Tres líneas de trabajo.",
+      "items": {
+        "qaoa": {
+          "meta": "01 · QAOA · VQE",
+          "title": "Diagramas de decisión para algoritmos variacionales",
+          "body": "Evalué diagramas de decisión para simular algoritmos cuánticos variacionales, midiendo eficiencia computacional y escalabilidad."
+        },
+        "nqfs": {
+          "meta": "02 · NQFS",
+          "title": "Estados de campo cuántico con redes neuronales",
+          "body": "Investigué enfoques de machine learning para sistemas cuánticos de muchos cuerpos, simulando modelos bosónicos en teoría de campos continua."
+        },
+        "vqdd": {
+          "meta": "03 · VQDD",
+          "title": "Diagramas de decisión cuánticos variacionales",
+          "body": "Desarrollé métodos de simulación de estados cuánticos con diferenciación automática para optimizar parámetros y mejorar el rendimiento."
+        }
+      }
+    },
+    "background": {
+      "label": "03 — Trayectoria",
+      "title": "Formación y entrenamiento.",
+      "items": {
+        "physics": {
+          "dates": "2020 — 2025",
+          "title": "Física",
+          "place": "Universidad Nacional de Colombia"
+        },
+        "researcher": {
+          "dates": "2022 — 2025",
+          "title": "Investigador en computación cuántica",
+          "place": "Grupo de Superconductividad y Nanotecnología, Universidad Nacional de Colombia"
+        },
+        "ai": {
+          "dates": "2023 — 2024",
+          "title": "Microgrado en Inteligencia Artificial",
+          "place": "Fusemachines"
+        },
+        "diploma": {
+          "dates": "2022",
+          "title": "Diplomado en programación, aplicaciones web",
+          "place": "Ministerio de Tecnologías de la Información y las Comunicaciones y Universidad de Caldas"
+        }
+      }
+    },
+    "principles": {
+      "label": "04 — Cómo marca mi ingeniería",
+      "title": "Hábitos de física que se trasladan.",
+      "items": {
+        "first": {
+          "title": "Primeros principios",
+          "body": "Descompongo un problema hasta lo que tiene que ser cierto antes de elegir herramientas. [Añadir un ejemplo de proyecto.]"
+        },
+        "measure": {
+          "title": "Medir, luego afirmar",
+          "body": "Benchmarks antes que opiniones, en investigación y en producción. [Añadir un ejemplo de proyecto.]"
+        },
+        "explain": {
+          "title": "Explicarlo con claridad",
+          "body": "Presentar un póster en el extranjero me enseñó a hacer ideas complejas fáciles de seguir. [Añadir un ejemplo de proyecto.]"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Te interesa la ciencia, o los productos?",
+      "contact": "Escríbeme →",
+      "work": "Ver mi trabajo"
+    }
+  },
+  "Notes": {
+    "metaTitle": "Notas · Santiago Acevedo",
+    "metaDescription": "Textos cortos sobre problemas de IA y fullstack.",
+    "breadcrumbHome": "← inicio",
+    "breadcrumbCurrent": " / notas",
+    "label": "NOTAS",
+    "titleBefore": "Notas desde ",
+    "titleAccent": "el build.",
+    "lead": "Textos cortos y prácticos sobre los problemas de IA y fullstack en los que trabajo, y lo que aprendí al resolverlos.",
+    "filters": {
+      "all": "Todas",
+      "ai": "IA",
+      "architecture": "Arquitectura",
+      "career": "Carrera",
+      "ariaLabel": "Filtrar notas por categoría"
+    },
+    "featured": "Destacada · {category}",
+    "readNote": "Leer nota →",
+    "allNotes": "Todas las notas",
+    "minRead": "{minutes} min de lectura",
+    "listMeta": "{date} · {category}",
+    "comingSoonTitle": "Más notas están en camino.",
+    "comingSoonBody": "Sígueme en LinkedIn para ver las nuevas cuando salgan.",
+    "linkedin": "LinkedIn ↗",
+    "pipeline": {
+      "question": "Pregunta",
+      "middle": "Búsqueda semántica + consultas estructuradas",
+      "answer": "LLM → respuesta"
+    },
+    "article": {
+      "breadcrumbNotes": "← notas",
+      "shareLinkedIn": "Compartir en LinkedIn ↗",
+      "authorName": "Santiago Acevedo",
+      "writtenBy": "Escrito por Santiago Acevedo",
+      "authorBio": "Ingeniero fullstack construyendo productos de IA. Abierto a roles remotos.",
+      "getInTouch": "Escríbeme →",
+      "nextNote": "Siguiente nota",
+      "allNotes": "← Todas las notas",
+      "byline": "{date} · {minutes} min de lectura",
+      "portraitAlt": "Retrato de Santiago Acevedo"
+    }
   },
   "Work": {
     "breadcrumbWork": "← trabajo",

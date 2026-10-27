@@ -1,0 +1,40 @@
+---
+title: "Mezclar búsqueda semántica y consultas estructuradas en un chatbot"
+summary: "[Resumen en una frase: la pregunta que responde esta nota.]"
+category: "AI"
+date: "[Date]"
+featured: true
+nextSlug: "hexagonal-backend"
+draft: true
+---
+
+[Párrafo de apertura: la situación y por qué era difícil. Manténlo concreto.]
+
+## Los dos tipos de preguntas
+
+[Explica qué preguntas necesitan significado (búsqueda semántica) y cuáles necesitan cifras exactas (consultas estructuradas).]
+
+<FigurePlaceholder>
+[Figura: diagrama de arquitectura simplificado]
+</FigurePlaceholder>
+
+## Juntarlas
+
+[Describe cómo llegan ambos resultados al modelo y cómo se produce la respuesta.]
+
+<CodeBlock label="python · placeholder">
+
+```python
+def answer(question: str) -> str:
+    context = semantic_search(question)
+    figures = run_structured_query(question)
+    return llm.generate(question, context, figures)
+```
+
+</CodeBlock>
+
+> [Una conclusión en una línea que valga la pena citar.]
+
+## Qué haría distinto
+
+[Una lección honesta.]

@@ -1,0 +1,315 @@
+.page {
+  color: var(--text);
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-gutter);
+}
+
+.hero {
+  padding-top: var(--space-14);
+}
+
+.breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-muted);
+}
+
+.breadcrumbLink {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.breadcrumbLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.pageLabel {
+  margin-top: var(--space-8);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  margin-top: 14px;
+  max-width: 900px;
+}
+
+.titleAccent {
+  color: var(--accent);
+}
+
+.lead {
+  margin-top: var(--space-6);
+  max-width: var(--measure-article);
+  color: var(--text-muted);
+}
+
+.stats {
+  margin-top: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.statCell {
+  flex: 1 1 220px;
+  padding: 22px var(--space-6);
+  border-left: 1px solid var(--line);
+}
+
+.statCell:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.statCell:last-child {
+  padding-right: 0;
+}
+
+.section {
+  padding-top: var(--space-22);
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.sectionTitle {
+  margin-top: 14px;
+}
+
+.pubGrid {
+  margin-top: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.paperCard {
+  flex: 2 1 560px;
+  min-width: 0;
+  padding: var(--space-8);
+}
+
+.paperTitle {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.paperAuthors {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}
+
+.paperSummary {
+  margin-top: var(--space-5);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-body);
+}
+
+.paperActions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.posterCard {
+  flex: 1 1 320px;
+  min-width: 0;
+  padding: var(--space-8);
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.posterLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.posterTitle {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.posterBody {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}
+
+.areasGrid {
+  margin-top: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.areaCard {
+  flex: 1 1 300px;
+  min-width: 0;
+  padding: 28px;
+}
+
+.areaMeta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--accent);
+}
+
+.areaTitle {
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.areaBody {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}
+
+.backgroundSection {
+  padding-top: var(--space-22);
+}
+
+.backgroundInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-14);
+}
+
+.backgroundIntro {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.timeline {
+  flex: 2 1 560px;
+  min-width: 0;
+  border-top: 1px solid var(--line);
+}
+
+.timelineRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-8);
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timelineDates {
+  flex: 0 1 150px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--accent);
+}
+
+.timelineBody {
+  flex: 1 1 320px;
+}
+
+.timelineTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.timelinePlace {
+  color: var(--text-muted);
+}
+
+.principles {
+  padding-top: var(--space-22);
+  padding-bottom: var(--space-24);
+}
+
+.principlesGrid {
+  margin-top: var(--space-10);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.principleCard {
+  flex: 1 1 300px;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.principleTitle {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.principleBody {
+  margin-top: 10px;
+  color: var(--text-muted);
+}
+
+.cta {
+  border-top: 1px solid var(--line);
+  background: var(--surface-sunken);
+}
+
+.ctaInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-14);
+}
+
+.ctaTitle {
+  margin: 0;
+  flex: 1 1 440px;
+  max-width: 680px;
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}

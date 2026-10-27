@@ -27,6 +27,16 @@
   color: var(--accent);
 }
 
+.sectionTitleLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sectionTitleLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .sectionTitle {
   margin-top: var(--space-4);
 }

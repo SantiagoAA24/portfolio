@@ -1,8 +1,14 @@
 import { getTranslations } from "next-intl/server";
-import { Card } from "@/components";
+import { Link } from "@/i18n/navigation";
+import type { NoteSlug } from "@/lib/notes";
 import styles from "./home.module.css";
 
-const noteKeys = ["semantic", "hexagonal", "physics"] as const;
+const noteItems: { key: "semantic" | "hexagonal" | "physics"; slug: NoteSlug }[] =
+  [
+    { key: "semantic", slug: "semantic-search-chatbot" },
+    { key: "hexagonal", slug: "hexagonal-backend" },
+    { key: "physics", slug: "physics-debugging" },
+  ];
 
 export async function RecentNotes() {
   const t = await getTranslations("Home.notes");
@@ -19,11 +25,15 @@ export async function RecentNotes() {
           {t("title")}
         </h2>
         <div className={styles.notesGrid}>
-          {noteKeys.map((key) => (
-            <Card key={key} as="a" href="#" className={styles.noteCard}>
+          {noteItems.map(({ key, slug }) => (
+            <Link
+              key={key}
+              href={`/notes/${slug}`}
+              className={`card ${styles.noteCard}`}
+            >
               <p className={styles.noteMeta}>{t(`items.${key}.meta`)}</p>
               <p className={styles.noteTitle}>{t(`items.${key}.title`)}</p>
-            </Card>
+            </Link>
           ))}
         </div>
       </div>

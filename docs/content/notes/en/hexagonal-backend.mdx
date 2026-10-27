@@ -1,0 +1,39 @@
+---
+title: "One hexagonal backend for robotics, AI and web teams"
+summary: "[One-sentence summary: the question this note answers.]"
+category: "Architecture"
+date: "[Date]"
+featured: false
+nextSlug: "physics-debugging"
+draft: true
+---
+
+[Opening paragraph: the situation and why it was hard. Keep it concrete.]
+
+## Why one backend
+
+[Explain the pressure to share a backend across robotics, AI and web teams.]
+
+<FigurePlaceholder>
+[Figure: hexagonal ports and adapters sketch]
+</FigurePlaceholder>
+
+## Ports that stay stable
+
+[Describe which boundaries stayed stable and which adapters changed.]
+
+<CodeBlock label="python · placeholder">
+
+```python
+# [Placeholder: a small interface or use-case sketch]
+class RobotControlPort:
+    def move(self, joint: str, angle: float) -> None: ...
+```
+
+</CodeBlock>
+
+> [A one-line takeaway worth quoting.]
+
+## What I would do differently
+
+[One honest lesson learned.]

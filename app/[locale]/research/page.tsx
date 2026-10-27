@@ -1,46 +1,46 @@
+import { ResearchPage } from "@/components/research/ResearchPage";
+import { routing } from "@/i18n/routing";
+import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default function ResearchPage({ params }: Props) {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    return {};
+  }
+
+  const t = await getTranslations({ locale, namespace: "Research" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
+
+export default function ResearchRoute({ params }: Props) {
   return (
-    <Suspense fallback={<MainShell />}>
+    <Suspense>
       <ResearchContent params={params} />
     </Suspense>
   );
 }
 
-function MainShell({ children }: { children?: React.ReactNode }) {
-  return (
-    <main
-      style={{
-        maxWidth: "var(--container-max)",
-        margin: "0 auto",
-        padding: "var(--space-24) var(--container-gutter)",
-      }}
-    >
-      {children}
-    </main>
-  );
-}
-
 async function ResearchContent({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("Stubs");
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
-  return (
-    <MainShell>
-      <h1 className="h1">{t("researchTitle")}</h1>
-      <p
-        className="body"
-        style={{ marginTop: "var(--space-4)", color: "var(--text-muted)" }}
-      >
-        {t("researchBody")}
-      </p>
-    </MainShell>
-  );
+  setRequestLocale(locale);
+  return <ResearchPage />;
 }

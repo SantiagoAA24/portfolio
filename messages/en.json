@@ -183,12 +183,153 @@
     }
   },
   "Stubs": {
-    "researchTitle": "Research",
-    "researchBody": "[Research page content coming soon]",
-    "notesTitle": "Notes",
-    "notesBody": "[Notes page content coming soon]",
     "contactTitle": "Contact",
     "contactBody": "[Contact page content coming soon]"
+  },
+  "Research": {
+    "metaTitle": "Research · Santiago Acevedo",
+    "metaDescription": "Quantum machine learning research: arXiv preprint and ICE-9 poster.",
+    "breadcrumbHome": "← home",
+    "breadcrumbCurrent": " / research",
+    "label": "RESEARCH",
+    "titleBefore": "From quantum states to ",
+    "titleAccent": "production code.",
+    "lead": "Before building products, I spent two years researching quantum machine learning at Universidad Nacional de Colombia. Here is what I published, and how that way of thinking shapes my engineering.",
+    "stats": {
+      "preprintsValue": "1",
+      "preprintsCaption": "ArXiv preprint",
+      "posterValue": "1",
+      "posterCaption": "International poster · Tenerife",
+      "yearsValue": "2022—25",
+      "yearsCaption": "Quantum computing research",
+      "degreeValue": "Physics",
+      "degreeCaption": "Universidad Nacional de Colombia"
+    },
+    "publications": {
+      "label": "01 — Publications",
+      "title": "Paper and poster.",
+      "paperLabel": "Preprint · arXiv · Submitted Feb 5, 2025",
+      "paperTitle": "Variational decision diagrams for quantum-inspired machine learning applications",
+      "paperAuthors": "Santiago Acevedo-Mancera, Vladimir Vargas-Calderón, Herbert Vinck-Posada",
+      "paperSummary": "[A plain-language summary in two or three sentences, written for someone who is not a physicist: what problem the paper tackles and what you found.]",
+      "arxivCta": "Read on arXiv →",
+      "pdfCta": "PDF ↓",
+      "posterLabel": "Poster · International conference",
+      "posterTitle": "Variational Decision Diagrams Quantum States",
+      "posterBody": "ICE-9: Quantum Information in Spain. Puerto de la Cruz, Tenerife, November 11 to 15, 2024."
+    },
+    "areas": {
+      "label": "02 — Research areas",
+      "title": "Three lines of work.",
+      "items": {
+        "qaoa": {
+          "meta": "01 · QAOA · VQE",
+          "title": "Decision diagrams for variational algorithms",
+          "body": "Benchmarked decision diagrams for simulating variational quantum algorithms, measuring computational efficiency and scalability."
+        },
+        "nqfs": {
+          "meta": "02 · NQFS",
+          "title": "Neural-network quantum field states",
+          "body": "Investigated machine learning approaches to many-body quantum systems, simulating bosonic models in continuum field theory."
+        },
+        "vqdd": {
+          "meta": "03 · VQDD",
+          "title": "Variational quantum decision diagrams",
+          "body": "Developed quantum state simulation methods with automatic differentiation for parameter optimization and better performance."
+        }
+      }
+    },
+    "background": {
+      "label": "03 — Background",
+      "title": "Education and training.",
+      "items": {
+        "physics": {
+          "dates": "2020 — 2025",
+          "title": "Physics",
+          "place": "Universidad Nacional de Colombia"
+        },
+        "researcher": {
+          "dates": "2022 — 2025",
+          "title": "Quantum computing researcher",
+          "place": "Superconductivity and Nanotechnology group, Universidad Nacional de Colombia"
+        },
+        "ai": {
+          "dates": "2023 — 2024",
+          "title": "Microdegree in Artificial Intelligence",
+          "place": "Fusemachines"
+        },
+        "diploma": {
+          "dates": "2022",
+          "title": "Diploma in programming, web applications",
+          "place": "Ministerio de Tecnologías de la Información y las Comunicaciones and Universidad de Caldas"
+        }
+      }
+    },
+    "principles": {
+      "label": "04 — How it shapes my engineering",
+      "title": "Physics habits that carry over.",
+      "items": {
+        "first": {
+          "title": "First principles",
+          "body": "I break a problem down to what must be true before choosing tools. [Add a project example.]"
+        },
+        "measure": {
+          "title": "Measure, then claim",
+          "body": "Benchmarks over opinions, in research and in production. [Add a project example.]"
+        },
+        "explain": {
+          "title": "Explain it clearly",
+          "body": "Presenting a poster abroad taught me to make complex ideas easy to follow. [Add a project example.]"
+        }
+      }
+    },
+    "cta": {
+      "title": "Curious about the science, or the products?",
+      "contact": "Get in touch →",
+      "work": "See my work"
+    }
+  },
+  "Notes": {
+    "metaTitle": "Notes · Santiago Acevedo",
+    "metaDescription": "Short write-ups on AI and fullstack problems.",
+    "breadcrumbHome": "← home",
+    "breadcrumbCurrent": " / notes",
+    "label": "NOTES",
+    "titleBefore": "Notes from ",
+    "titleAccent": "the build.",
+    "lead": "Short, practical write-ups on the AI and fullstack problems I work on, and what I learned solving them.",
+    "filters": {
+      "all": "All",
+      "ai": "AI",
+      "architecture": "Architecture",
+      "career": "Career",
+      "ariaLabel": "Filter notes by category"
+    },
+    "featured": "Featured · {category}",
+    "readNote": "Read note →",
+    "allNotes": "All notes",
+    "minRead": "{minutes} min read",
+    "listMeta": "{date} · {category}",
+    "comingSoonTitle": "More notes are on the way.",
+    "comingSoonBody": "Follow along on LinkedIn to see new ones as they land.",
+    "linkedin": "LinkedIn ↗",
+    "pipeline": {
+      "question": "Question",
+      "middle": "Semantic search + structured queries",
+      "answer": "LLM → answer"
+    },
+    "article": {
+      "breadcrumbNotes": "← notes",
+      "shareLinkedIn": "Share on LinkedIn ↗",
+      "authorName": "Santiago Acevedo",
+      "writtenBy": "Written by Santiago Acevedo",
+      "authorBio": "Fullstack engineer building AI products. Open to remote roles.",
+      "getInTouch": "Get in touch →",
+      "nextNote": "Next note",
+      "allNotes": "← All notes",
+      "byline": "{date} · {minutes} min read",
+      "portraitAlt": "Portrait of Santiago Acevedo"
+    }
   },
   "Work": {
     "breadcrumbWork": "← work",

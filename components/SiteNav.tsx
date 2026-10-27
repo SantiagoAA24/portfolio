@@ -7,9 +7,14 @@ import { Link, usePathname } from "@/i18n/navigation";
 const items = [
   { key: "work" as const, href: "/#work", hash: "work" },
   { key: "aiDemo" as const, href: "/#ai-demo", hash: "ai-demo" },
-  { key: "research" as const, href: "/#research", hash: "research" },
+  {
+    key: "research" as const,
+    href: "/research",
+    hash: "research",
+    page: "/research",
+  },
   { key: "stack" as const, href: "/#stack", hash: "stack" },
-  { key: "notes" as const, href: "/#notes", hash: "notes" },
+  { key: "notes" as const, href: "/notes", hash: "notes", page: "/notes" },
   { key: "contact" as const, href: "/#contact", hash: "contact" },
 ];
 
@@ -30,7 +35,12 @@ export function SiteNav() {
   return (
     <nav className="site-nav" aria-label={t("ariaLabel")}>
       {items.map((item) => {
-        const active = isHome && hash === item.hash;
+        const pageActive =
+          "page" in item &&
+          item.page !== undefined &&
+          (pathname === item.page || pathname.startsWith(`${item.page}/`));
+        const hashActive = isHome && hash === item.hash;
+        const active = pageActive || hashActive;
 
         return (
           <Link

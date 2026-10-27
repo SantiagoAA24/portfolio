@@ -1,0 +1,40 @@
+---
+title: "Mixing semantic search and structured queries in one chatbot"
+summary: "[One-sentence summary: the question this note answers.]"
+category: "AI"
+date: "[Date]"
+featured: true
+nextSlug: "hexagonal-backend"
+draft: true
+---
+
+[Opening paragraph: the situation and why it was hard. Keep it concrete.]
+
+## The two kinds of questions
+
+[Explain which questions need meaning (semantic search) and which need exact numbers (structured queries).]
+
+<FigurePlaceholder>
+[Figure: simplified architecture diagram]
+</FigurePlaceholder>
+
+## Putting them together
+
+[Describe how the two results reach the model and how the answer is produced.]
+
+<CodeBlock label="python · placeholder">
+
+```python
+def answer(question: str) -> str:
+    context = semantic_search(question)
+    figures = run_structured_query(question)
+    return llm.generate(question, context, figures)
+```
+
+</CodeBlock>
+
+> [A one-line takeaway worth quoting.]
+
+## What I would do differently
+
+[One honest lesson learned.]
