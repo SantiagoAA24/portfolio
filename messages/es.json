@@ -28,9 +28,159 @@
     "location": "Bogotá, Colombia · UTC−5"
   },
   "Home": {
-    "title": "Santiago Acevedo",
-    "lead": "Ingeniero fullstack construyendo productos de IA.",
-    "styleguide": "Abrir styleguide →"
+    "hero": {
+      "status": "Abierto a roles remotos · Fullstack + IA",
+      "titleBefore": "Ingeniero fullstack construyendo ",
+      "titleAccent": "productos de IA",
+      "titleAfter": ", de la base de datos a la interfaz.",
+      "lead": "React, TypeScript y FastAPI en la superficie. RAG, OpenAI y visión por computadora debajo. Físico de formación, con un artículo publicado en machine learning cuántico.",
+      "ctaCv": "Descargar CV (ES) ↓",
+      "ctaContact": "Contáctame →",
+      "portraitAlt": "Retrato de Santiago Acevedo",
+      "whoami": {
+        "prompt": "$ whoami",
+        "locationKey": "ubicación",
+        "locationValue": "Bogotá, Colombia",
+        "stackKey": "stack",
+        "stackValue": "React · TS · FastAPI",
+        "aiKey": "ia",
+        "aiValue": "OpenAI · RAG · [vector DB]",
+        "researchKey": "research",
+        "researchValue": "arXiv:2502.04271",
+        "statusKey": "status",
+        "statusValue": "abierto a remoto"
+      },
+      "stats": {
+        "shippingValue": "2022",
+        "shippingCaption": "Entregando productos desde",
+        "countriesValue": "3",
+        "countriesCaption": "Países con clientes · CO · US · MX",
+        "arxivValue": "1",
+        "arxivCaption": "Preprint arXiv en ML cuántico"
+      }
+    },
+    "work": {
+      "label": "01 — Trabajo seleccionado",
+      "title": "Tres proyectos, de punta a punta.",
+      "outcomePrefix": "Resultado:",
+      "outcomePlaceholder": "[añadir un resultado medible]",
+      "caseStudy": "Leer caso de estudio →",
+      "items": {
+        "intelisoft": {
+          "meta": "01 · Intelisoft · Plataforma de ingeniería del sector energético",
+          "title": "Chatbot de IA para datos empresariales",
+          "body": "Diseñado y construido de punta a punta con la API de OpenAI. Combina búsqueda semántica con consultas estructuradas para responder preguntas y generar reportes automáticamente. Actualmente en despliegue sobre Azure.",
+          "pipeline": {
+            "question": "Pregunta",
+            "semantic": "Búsqueda semántica",
+            "structured": "Consultas estructuradas",
+            "llm": "LLM",
+            "answer": "Respuesta / reporte"
+          },
+          "chips": ["OpenAI API", "React", ".NET API", "Azure"]
+        },
+        "candelasoft": {
+          "meta": "02 · Candelasoft · Automatización industrial",
+          "title": "Interfaces de control para robots y modelos de visión",
+          "body": "Interfaces web de control para brazos robóticos y modelos de visión por computadora, empaquetadas con Electron para Linux, macOS y Windows. REST más protocolos en tiempo real, sobre un backend FastAPI hexagonal compartido por los equipos de robótica, IA y desarrollo.",
+          "pipeline": {
+            "robot": "Robot + cámara",
+            "vision": "Modelo de visión",
+            "fastapi": "FastAPI",
+            "realtime": "WebSockets · MQTT",
+            "ui": "UI Electron"
+          },
+          "chips": ["React", "FastAPI", "Electron", "MQTT"]
+        },
+        "akontrol": {
+          "meta": "03 · Freelance · Akontrol Diagnósticos",
+          "title": "Rediseño completo de producto, en solitario",
+          "body": "UI en Figma, frontend React, backend FastAPI, diseño de base de datos y CI/CD con Docker en Railway y AWS, todo entregado por una persona.",
+          "pipeline": {
+            "figma": "Figma",
+            "react": "React",
+            "fastapi": "FastAPI",
+            "postgres": "PostgreSQL",
+            "docker": "Docker CI/CD"
+          },
+          "chips": ["React", "FastAPI", "PostgreSQL", "Docker", "AWS"]
+        }
+      }
+    },
+    "aiDemo": {
+      "label": "02 — Demo de IA",
+      "title": "Pregúntale a mi portfolio.",
+      "body": "Un asistente RAG pequeño sobre mi CV, proyectos y paper, con OpenAI y [vector DB]. Prueba una pregunta y mira qué fuentes cita.",
+      "terminalTitle": "portfolio-rag",
+      "sampleQuestion": "¿Qué ha entregado Santiago con LLMs?",
+      "sampleAnswer": "Diseñó y construyó un chatbot impulsado por OpenAI que mezcla búsqueda semántica con consultas estructuradas para responder preguntas y generar reportes, e integró modelos de visión por computadora en interfaces de control industrial.",
+      "citation1": "[1] Intelisoft · chatbot",
+      "citation2": "[2] Candelasoft · visión",
+      "suggestion1": "Cuéntame sobre el paper",
+      "suggestion2": "¿Qué stack usa?",
+      "inputAria": "Haz una pregunta",
+      "inputPlaceholder": "Pregunta sobre mi trabajo…",
+      "ask": "Preguntar →",
+      "placeholderNote": "[Demo de IA — RAG interactivo próximamente]"
+    },
+    "research": {
+      "label": "03 — Investigación",
+      "title": "De estados cuánticos a código en producción.",
+      "body": "Estudié física en la Universidad Nacional de Colombia y pasé dos años en investigación de computación cuántica. Se nota en cómo trabajo: primeros principios, resultados medidos y explicaciones claras.",
+      "preprintLabel": "Preprint · arXiv · Feb 2025",
+      "preprintTitle": "Variational decision diagrams for quantum-inspired machine learning applications",
+      "preprintAuthors": "Santiago Acevedo-Mancera, Vladimir Vargas-Calderón, Herbert Vinck-Posada",
+      "preprintLink": "arxiv.org/abs/2502.04271 →",
+      "posterLabel": "Póster · ICE-9 · Tenerife · Nov 2024",
+      "posterTitle": "Variational Decision Diagrams Quantum States"
+    },
+    "stack": {
+      "label": "04 — Stack",
+      "title": "A lo que recurro.",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "TypeScript", "Figma", "HTML · CSS"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["FastAPI", "PostgreSQL", "Node.js", ".NET APIs (consumo)"]
+      },
+      "ai": {
+        "title": "IA",
+        "items": ["OpenAI API", "RAG · [vector DB]", "Azure OpenAI", "Visión por computadora"]
+      },
+      "infra": {
+        "title": "Infra",
+        "items": ["Docker · CI/CD", "AWS · Azure", "Railway", "GitHub"]
+      }
+    },
+    "notes": {
+      "label": "05 — Notas",
+      "title": "Notas desde el build.",
+      "items": {
+        "semantic": {
+          "meta": "Próximamente · IA",
+          "title": "Mezclar búsqueda semántica y consultas estructuradas en un chatbot"
+        },
+        "hexagonal": {
+          "meta": "Próximamente · Arquitectura",
+          "title": "Un backend hexagonal para equipos de robótica, IA y web"
+        },
+        "physics": {
+          "meta": "Próximamente · Carrera",
+          "title": "Lo que un título de física me enseñó sobre depurar"
+        }
+      }
+    },
+    "contact": {
+      "label": "06 — Contacto",
+      "title": "Construyamos algo donde la IA sea el producto.",
+      "email": "santiago.acevedo.m24@gmail.com",
+      "linkedin": "LinkedIn ↗",
+      "github": "[GitHub URL]",
+      "cvEn": "CV · English ↓",
+      "cvEs": "CV · Español ↓"
+    }
   },
   "Stubs": {
     "researchTitle": "Investigación",

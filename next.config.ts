@@ -8,14 +8,8 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  // Do not pipe *.css through @tailwindcss/turbopack: this project uses plain
+  // CSS + CSS Modules, and that loader strips module exports (className → undefined).
 };
 
 const withNextIntl = createNextIntlPlugin();

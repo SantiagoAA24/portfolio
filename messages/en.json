@@ -28,9 +28,159 @@
     "location": "Bogotá, Colombia · UTC−5"
   },
   "Home": {
-    "title": "Santiago Acevedo",
-    "lead": "Fullstack engineer building AI products.",
-    "styleguide": "Open styleguide →"
+    "hero": {
+      "status": "Open to remote roles · Fullstack + AI",
+      "titleBefore": "Fullstack engineer building ",
+      "titleAccent": "AI products",
+      "titleAfter": ", from database to interface.",
+      "lead": "React, TypeScript and FastAPI on the surface. RAG, OpenAI and computer vision underneath. A physicist by training, with a published paper in quantum machine learning.",
+      "ctaCv": "Download CV (EN) ↓",
+      "ctaContact": "Contact me →",
+      "portraitAlt": "Portrait of Santiago Acevedo",
+      "whoami": {
+        "prompt": "$ whoami",
+        "locationKey": "location",
+        "locationValue": "Bogotá, Colombia",
+        "stackKey": "stack",
+        "stackValue": "React · TS · FastAPI",
+        "aiKey": "ai",
+        "aiValue": "OpenAI · RAG · [vector DB]",
+        "researchKey": "research",
+        "researchValue": "arXiv:2502.04271",
+        "statusKey": "status",
+        "statusValue": "open to remote"
+      },
+      "stats": {
+        "shippingValue": "2022",
+        "shippingCaption": "Shipping products since",
+        "countriesValue": "3",
+        "countriesCaption": "Countries with clients · CO · US · MX",
+        "arxivValue": "1",
+        "arxivCaption": "arXiv preprint in quantum ML"
+      }
+    },
+    "work": {
+      "label": "01 — Selected work",
+      "title": "Three projects, built end to end.",
+      "outcomePrefix": "Outcome:",
+      "outcomePlaceholder": "[add a measurable result]",
+      "caseStudy": "Read case study →",
+      "items": {
+        "intelisoft": {
+          "meta": "01 · Intelisoft · Energy-sector engineering platform",
+          "title": "AI chatbot for enterprise data",
+          "body": "Designed and built end to end with the OpenAI API. It combines semantic search with structured queries to answer questions and generate reports automatically. Now deploying on Azure.",
+          "pipeline": {
+            "question": "Question",
+            "semantic": "Semantic search",
+            "structured": "Structured queries",
+            "llm": "LLM",
+            "answer": "Answer / report"
+          },
+          "chips": ["OpenAI API", "React", ".NET API", "Azure"]
+        },
+        "candelasoft": {
+          "meta": "02 · Candelasoft · Industrial automation",
+          "title": "Control interfaces for robots and vision models",
+          "body": "Web control interfaces for robotic arms and computer-vision models, packaged with Electron for Linux, macOS and Windows. REST plus real-time protocols, on a hexagonal FastAPI backend shared by the robotics, AI and dev teams.",
+          "pipeline": {
+            "robot": "Robot + camera",
+            "vision": "Vision model",
+            "fastapi": "FastAPI",
+            "realtime": "WebSockets · MQTT",
+            "ui": "Electron UI"
+          },
+          "chips": ["React", "FastAPI", "Electron", "MQTT"]
+        },
+        "akontrol": {
+          "meta": "03 · Freelance · Akontrol Diagnósticos",
+          "title": "A full product redesign, solo",
+          "body": "Figma UI, React frontend, FastAPI backend, database design and CI/CD with Docker on Railway and AWS, all delivered by one person.",
+          "pipeline": {
+            "figma": "Figma",
+            "react": "React",
+            "fastapi": "FastAPI",
+            "postgres": "PostgreSQL",
+            "docker": "Docker CI/CD"
+          },
+          "chips": ["React", "FastAPI", "PostgreSQL", "Docker", "AWS"]
+        }
+      }
+    },
+    "aiDemo": {
+      "label": "02 — AI demo",
+      "title": "Ask my portfolio.",
+      "body": "A small RAG assistant over my CV, projects and paper, built with OpenAI and [vector DB]. Try a question and see which sources it cites.",
+      "terminalTitle": "portfolio-rag",
+      "sampleQuestion": "What has Santiago shipped with LLMs?",
+      "sampleAnswer": "He designed and built an OpenAI-powered chatbot that mixes semantic search with structured queries to answer questions and generate reports, and integrated computer-vision models into industrial control interfaces.",
+      "citation1": "[1] Intelisoft · chatbot",
+      "citation2": "[2] Candelasoft · vision",
+      "suggestion1": "Tell me about the paper",
+      "suggestion2": "What stack does he use?",
+      "inputAria": "Ask a question",
+      "inputPlaceholder": "Ask about my work…",
+      "ask": "Ask →",
+      "placeholderNote": "[AI demo — interactive RAG coming soon]"
+    },
+    "research": {
+      "label": "03 — Research",
+      "title": "From quantum states to production code.",
+      "body": "I studied physics at Universidad Nacional de Colombia and spent two years in quantum computing research. It shows in how I work: first principles, measured results, and clear explanations.",
+      "preprintLabel": "Preprint · arXiv · Feb 2025",
+      "preprintTitle": "Variational decision diagrams for quantum-inspired machine learning applications",
+      "preprintAuthors": "Santiago Acevedo-Mancera, Vladimir Vargas-Calderón, Herbert Vinck-Posada",
+      "preprintLink": "arxiv.org/abs/2502.04271 →",
+      "posterLabel": "Poster · ICE-9 · Tenerife · Nov 2024",
+      "posterTitle": "Variational Decision Diagrams Quantum States"
+    },
+    "stack": {
+      "label": "04 — Stack",
+      "title": "What I reach for.",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "TypeScript", "Figma", "HTML · CSS"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["FastAPI", "PostgreSQL", "Node.js", ".NET APIs (consuming)"]
+      },
+      "ai": {
+        "title": "AI",
+        "items": ["OpenAI API", "RAG · [vector DB]", "Azure OpenAI", "Computer vision"]
+      },
+      "infra": {
+        "title": "Infra",
+        "items": ["Docker · CI/CD", "AWS · Azure", "Railway", "GitHub"]
+      }
+    },
+    "notes": {
+      "label": "05 — Notes",
+      "title": "Notes from the build.",
+      "items": {
+        "semantic": {
+          "meta": "Coming soon · AI",
+          "title": "Mixing semantic search and structured queries in one chatbot"
+        },
+        "hexagonal": {
+          "meta": "Coming soon · Architecture",
+          "title": "One hexagonal backend for robotics, AI and web teams"
+        },
+        "physics": {
+          "meta": "Coming soon · Career",
+          "title": "What a physics degree taught me about debugging"
+        }
+      }
+    },
+    "contact": {
+      "label": "06 — Contact",
+      "title": "Let's build something where AI is the product.",
+      "email": "santiago.acevedo.m24@gmail.com",
+      "linkedin": "LinkedIn ↗",
+      "github": "[GitHub URL]",
+      "cvEn": "CV · English ↓",
+      "cvEs": "CV · Español ↓"
+    }
   },
   "Stubs": {
     "researchTitle": "Research",
