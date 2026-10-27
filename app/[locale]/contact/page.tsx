@@ -1,46 +1,46 @@
+import { ContactPage } from "@/components/contact/ContactPage";
+import { routing } from "@/i18n/routing";
+import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export default function ContactPage({ params }: Props) {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    return {};
+  }
+
+  const t = await getTranslations({ locale, namespace: "Contact" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
+
+export default function ContactRoute({ params }: Props) {
   return (
-    <Suspense fallback={<MainShell />}>
+    <Suspense>
       <ContactContent params={params} />
     </Suspense>
   );
 }
 
-function MainShell({ children }: { children?: React.ReactNode }) {
-  return (
-    <main
-      style={{
-        maxWidth: "var(--container-max)",
-        margin: "0 auto",
-        padding: "var(--space-24) var(--container-gutter)",
-      }}
-    >
-      {children}
-    </main>
-  );
-}
-
 async function ContactContent({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("Stubs");
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
-  return (
-    <MainShell>
-      <h1 className="h1">{t("contactTitle")}</h1>
-      <p
-        className="body"
-        style={{ marginTop: "var(--space-4)", color: "var(--text-muted)" }}
-      >
-        {t("contactBody")}
-      </p>
-    </MainShell>
-  );
+  setRequestLocale(locale);
+  return <ContactPage />;
 }

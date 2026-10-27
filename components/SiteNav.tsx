@@ -15,7 +15,12 @@ const items = [
   },
   { key: "stack" as const, href: "/#stack", hash: "stack" },
   { key: "notes" as const, href: "/notes", hash: "notes", page: "/notes" },
-  { key: "contact" as const, href: "/#contact", hash: "contact" },
+  {
+    key: "contact" as const,
+    href: "/contact",
+    hash: "contact",
+    page: "/contact",
+  },
 ];
 
 export function SiteNav() {

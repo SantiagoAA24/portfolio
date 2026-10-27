@@ -182,9 +182,62 @@
       "cvEs": "CV · Español ↓"
     }
   },
-  "Stubs": {
-    "contactTitle": "Contact",
-    "contactBody": "[Contact page content coming soon]"
+  "Contact": {
+    "metaTitle": "Contact · Santiago Acevedo",
+    "metaDescription": "Get in touch for remote fullstack roles where AI is part of the product.",
+    "breadcrumbHome": "← home",
+    "breadcrumbCurrent": " / contact",
+    "label": "CONTACT",
+    "titleBefore": "Let's ",
+    "titleAccent": "talk.",
+    "lead": "Looking for a remote fullstack role where AI is part of the product — not a slide deck afterthought.",
+    "portraitAlt": "Portrait of Santiago Acevedo",
+    "fullName": "Andres Santiago Acevedo Mancera",
+    "role": "Fullstack engineer · React, FastAPI, AI",
+    "lookingForLabel": "What I'm looking for",
+    "lookingFor": {
+      "remote": "Remote fullstack roles",
+      "ai": "Products where AI is essential, not decorative",
+      "english": "English-speaking teams"
+    },
+    "rows": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Location",
+      "languages": "Languages",
+      "availability": "Availability"
+    },
+    "email": "santiago.acevedo.m24@gmail.com",
+    "linkedin": "andres-santiago-acevedo-mancera ↗",
+    "github": "[your GitHub profile] ↗",
+    "location": "Bogotá, Colombia · UTC−5",
+    "languages": "Spanish (native) · English (B2+)",
+    "availability": "[add your start date]",
+    "cvEn": "CV · English ↓",
+    "cvEs": "CV · Español ↓",
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company (optional)",
+      "message": "Message",
+      "honeypot": "Website",
+      "submit": "Send message →",
+      "submitting": "Sending…",
+      "helper": "I usually reply within [x] days.",
+      "success": "Message sent. I'll get back to you soon.",
+      "errors": {
+        "nameRequired": "Enter your name.",
+        "emailInvalid": "Enter a valid email.",
+        "messageMin": "Message must be at least 10 characters.",
+        "messageMax": "Message is too long.",
+        "rateLimit": "Too many messages. Try again later.",
+        "sendFailed": "Could not send the message. Try again.",
+        "config": "The form is temporarily unavailable.",
+        "generic": "Something went wrong. Try again."
+      }
+    }
   },
   "Research": {
     "metaTitle": "Research · Santiago Acevedo",

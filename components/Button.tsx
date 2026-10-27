@@ -42,8 +42,9 @@ export function Button(props: ButtonProps) {
   }
 
   const buttonRest = rest as Omit<ButtonAsButton, "variant" | "children" | "className">;
+  const { type = "button", ...buttonAttrs } = buttonRest;
   return (
-    <button type="button" className={classes} {...buttonRest}>
+    <button type={type} className={classes} {...buttonAttrs}>
       {children}
     </button>
   );

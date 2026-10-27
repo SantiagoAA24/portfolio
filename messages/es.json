@@ -182,9 +182,62 @@
       "cvEs": "CV · Español ↓"
     }
   },
-  "Stubs": {
-    "contactTitle": "Contacto",
-    "contactBody": "[Contenido de contacto próximamente]"
+  "Contact": {
+    "metaTitle": "Contacto · Santiago Acevedo",
+    "metaDescription": "Escríbeme para roles fullstack remotos donde la IA forme parte del producto.",
+    "breadcrumbHome": "← inicio",
+    "breadcrumbCurrent": " / contacto",
+    "label": "CONTACTO",
+    "titleBefore": "Hablemos ",
+    "titleAccent": "ya.",
+    "lead": "Busco un rol fullstack remoto donde la IA sea parte del producto — no un afterthought en una diapositiva.",
+    "portraitAlt": "Retrato de Santiago Acevedo",
+    "fullName": "Andres Santiago Acevedo Mancera",
+    "role": "Ingeniero fullstack · React, FastAPI, IA",
+    "lookingForLabel": "Qué busco",
+    "lookingFor": {
+      "remote": "Roles fullstack remotos",
+      "ai": "Productos donde la IA sea esencial, no decorativa",
+      "english": "Equipos que trabajen en inglés"
+    },
+    "rows": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Ubicación",
+      "languages": "Idiomas",
+      "availability": "Disponibilidad"
+    },
+    "email": "santiago.acevedo.m24@gmail.com",
+    "linkedin": "andres-santiago-acevedo-mancera ↗",
+    "github": "[your GitHub profile] ↗",
+    "location": "Bogotá, Colombia · UTC−5",
+    "languages": "Español (nativo) · Inglés (B2+)",
+    "availability": "[add your start date]",
+    "cvEn": "CV · English ↓",
+    "cvEs": "CV · Español ↓",
+    "form": {
+      "title": "Enviar un mensaje",
+      "name": "Nombre",
+      "email": "Email",
+      "company": "Empresa (opcional)",
+      "message": "Mensaje",
+      "honeypot": "Sitio web",
+      "submit": "Enviar mensaje →",
+      "submitting": "Enviando…",
+      "helper": "Suelo responder en [x] días.",
+      "success": "Mensaje enviado. Te responderé pronto.",
+      "errors": {
+        "nameRequired": "Escribe tu nombre.",
+        "emailInvalid": "Escribe un email válido.",
+        "messageMin": "El mensaje debe tener al menos 10 caracteres.",
+        "messageMax": "El mensaje es demasiado largo.",
+        "rateLimit": "Demasiados mensajes. Intenta más tarde.",
+        "sendFailed": "No se pudo enviar el mensaje. Intenta de nuevo.",
+        "config": "El formulario no está disponible temporalmente.",
+        "generic": "Algo salió mal. Intenta de nuevo."
+      }
+    }
   },
   "Research": {
     "metaTitle": "Investigación · Santiago Acevedo",
