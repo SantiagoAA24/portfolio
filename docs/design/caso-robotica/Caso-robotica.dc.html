@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Santiago Acevedo — Case study, robotics interfaces</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{text-decoration:none}
+a:hover{opacity:.85}
+</style>
+</helmet>
+<div id="top" style="width:100%;background:#0A0C0F;color:#E8ECEF;font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<header style="border-bottom:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:16px 40px;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<a href="Main.dc.html" style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:14px;color:#E8ECEF"><span style="display:block;width:10px;height:10px;background:{{accent}}"></span>santiago.acevedo</a>
+<nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13px">
+<a href="Main.dc.html" style="color:{{accent}}">01 work</a>
+<a href="Main.dc.html" style="color:#9AA3AD">02 ai-demo</a>
+<a href="Investigacion.dc.html" style="color:#9AA3AD">03 research</a>
+<a href="Main.dc.html" style="color:#9AA3AD">04 stack</a>
+<a href="Notas.dc.html" style="color:#9AA3AD">05 notes</a>
+<a href="Contacto.dc.html" style="color:#9AA3AD">06 contact</a>
+</nav>
+<div style="display:flex;align-items:center;gap:12px">
+<div style="display:flex;border:1px solid #232830;font-family:'JetBrains Mono',monospace;font-size:12px">
+<a href="#" aria-label="English" style="padding:6px 10px;background:{{accent}};color:#0A0C0F">EN</a>
+<a href="#" aria-label="Español" style="padding:6px 10px;color:#9AA3AD">ES</a>
+</div>
+<a href="#" style="padding:8px 14px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:13px">CV ↓</a>
+</div>
+</div>
+</header>
+
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:56px 40px 0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD"><a href="Main.dc.html" style="color:{{accent}}">← work</a> / 02 · robotics-interfaces</div>
+<div style="margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">CASE STUDY · INDUSTRIAL AUTOMATION</div>
+<h1 style="margin:14px 0 0;max-width:960px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:64px;line-height:1.04;letter-spacing:-.025em">Control interfaces for <span style="color:{{accent}}">robots and vision models</span></h1>
+<p style="margin:24px 0 0;max-width:760px;font-size:20px;color:#9AA3AD">Fullstack systems that connect robotic arms and computer-vision models to web control interfaces, packaged as cross-platform desktop apps.</p>
+</div>
+<div style="max-width:1200px;margin:48px auto 0;padding:0 40px">
+<div style="display:flex;flex-wrap:wrap;border-top:1px solid #232830;border-bottom:1px solid #232830">
+<div style="flex:1 1 220px;padding:22px 24px 22px 0"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">ROLE</div><div style="margin-top:6px">Fullstack developer</div></div>
+<div style="flex:1 1 220px;padding:22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">CONTEXT</div><div style="margin-top:6px">Candelasoft · Industrial automation</div></div>
+<div style="flex:1 1 220px;padding:22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">PERIOD</div><div style="margin-top:6px">Aug 2025 — Jun 2026</div></div>
+<div style="flex:1 1 220px;padding:22px 0 22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">STACK</div><div style="margin-top:6px">React · FastAPI · Electron · MQTT</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width:1200px;margin:48px auto 0;padding:0 40px">
+<div style="padding:40px;background:#0F1216;border:1px solid #232830">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">ARCHITECTURE · SIMPLIFIED</div>
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:20px;font-family:'JetBrains Mono',monospace;font-size:14px">
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">Robotic arm + camera</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="padding:16px 20px;border:1px solid {{accent}};color:{{accent}}">Computer-vision model</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">FastAPI · hexagonal</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="padding:16px 20px;border:1px solid {{accent}};color:{{accent}}">REST</div>
+<div style="padding:16px 20px;border:1px solid {{accent}};color:{{accent}}">WebSockets · MQTT</div>
+</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">React UI · Electron</div>
+</div>
+<div style="margin-top:28px;font-size:15px;color:#9AA3AD;max-width:680px">Commands and data travel over REST; live robot and vision data stream in real time. The same interface runs on Linux, macOS and Windows.</div>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:72px 40px 24px;display:flex;flex-wrap:wrap;gap:56px">
+<aside style="flex:0 1 260px;min-width:200px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em;padding-bottom:12px;border-bottom:1px solid #232830">ON THIS PAGE</div>
+<div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px">
+<a href="#context" style="color:#E8ECEF">01 Context</a>
+<a href="#problem" style="color:#9AA3AD">02 The problem</a>
+<a href="#built" style="color:#9AA3AD">03 What I built</a>
+<a href="#decisions" style="color:#9AA3AD">04 Key decisions</a>
+<a href="#outcome" style="color:#9AA3AD">05 Outcome</a>
+</div>
+</aside>
+<div style="flex:1 1 560px;min-width:0;max-width:760px">
+
+<div id="context">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">01</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Context</h2>
+<p style="margin:16px 0 0;font-size:18px;color:#B9C0C8">At Candelasoft I built fullstack systems for industrial automation, connecting robotic arms and computer-vision models to web control interfaces. I worked in a SCRUM team that spanned robotics, AI and development. [Add what the machines did and who used the interfaces.]</p>
+</div>
+
+<div id="problem" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">02</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">The problem</h2>
+<p style="margin:16px 0 0;font-size:18px;color:#B9C0C8">[Two or three sentences: what operators needed to control and see, and why three teams needed a shared structure.]</p>
+</div>
+
+<div id="built" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">03</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">What I built</h2>
+<div style="margin-top:20px;border-top:1px solid #232830">
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">01</span><span style="font-size:17px">Web control interfaces integrating robotic arms and computer-vision models</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">02</span><span style="font-size:17px">Cross-platform desktop apps with Electron for Linux, macOS and Windows</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">03</span><span style="font-size:17px">Frontends for two projects rebuilt from Figma designs</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">04</span><span style="font-size:17px">Connections to backend services over REST and real-time protocols (WebSockets, MQTT)</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">05</span><span style="font-size:17px">A redesigned database schema that scales across projects, and FastAPI REST APIs on a hybrid modular and hexagonal architecture</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">06</span><span style="font-size:17px">Support for an internal tool that uses OCR and web scraping to process documents automatically</span></div>
+</div>
+</div>
+
+<div id="decisions" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">04</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Key decisions</h2>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:16px">
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">A hybrid modular and hexagonal backend</div><p style="margin:10px 0 0;color:#9AA3AD">[Explain how it gave the robotics, AI and dev teams clear boundaries, and what it cost.]</p></div>
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">REST and real-time protocols together</div><p style="margin:10px 0 0;color:#9AA3AD">[Explain what goes over REST, what streams over WebSockets or MQTT, and why.]</p></div>
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">Electron for the desktop</div><p style="margin:10px 0 0;color:#9AA3AD">[Explain why a desktop app made sense here, and the main trade-off.]</p></div>
+</div>
+</div>
+
+<div id="outcome" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">05</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Outcome</h2>
+<div style="margin-top:20px;display:flex;flex-wrap:wrap;border-top:1px solid #232830;border-bottom:1px solid #232830">
+<div style="flex:1 1 200px;padding:24px 20px 24px 0"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+<div style="flex:1 1 200px;padding:24px 20px;border-left:1px solid #232830"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+<div style="flex:1 1 200px;padding:24px 0 24px 20px;border-left:1px solid #232830"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+</div>
+<div style="margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">BUILT WITH</div>
+<div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD">
+<span style="padding:5px 12px;border:1px solid #232830">React</span><span style="padding:5px 12px;border:1px solid #232830">FastAPI</span><span style="padding:5px 12px;border:1px solid #232830">Electron</span><span style="padding:5px 12px;border:1px solid #232830">WebSockets</span><span style="padding:5px 12px;border:1px solid #232830">MQTT</span><span style="padding:5px 12px;border:1px solid #232830">Figma</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="border-top:1px solid #232830;background:#0F1216">
+<div style="max-width:1200px;margin:0 auto;padding:56px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 360px;min-width:0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">NEXT CASE · 03</div>
+<a href="Caso-akontrol.dc.html" style="display:inline-block;margin-top:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1.15;color:#E8ECEF">A full product redesign, solo <span style="color:{{accent}}">→</span></a>
+</div>
+<a href="Main.dc.html" style="padding:14px 22px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:14px">← All work</a>
+</div>
+</section>
+<section style="border-top:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:72px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<h2 style="margin:0;flex:1 1 480px;max-width:720px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-.025em">Need robots and AI to meet a clean interface?</h2>
+<div style="display:flex;flex-wrap:wrap;gap:14px;font-family:'JetBrains Mono',monospace;font-size:14px">
+<a href="Contacto.dc.html" style="padding:14px 22px;background:{{accent}};color:#0A0C0F;font-weight:500">Get in touch →</a>
+<a href="#" style="padding:14px 22px;border:1px solid #E8ECEF;color:#E8ECEF">CV · English ↓</a>
+</div>
+</div>
+<div style="border-top:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:24px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">
+<span>© 2026 Andres Santiago Acevedo Mancera</span><span>Bogotá, Colombia · UTC−5</span>
+</div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7DB8FF","options":["#7DB8FF","#38BDF8","#A99BFF"]},"$preview":{"width":1440,"height":3400}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7DB8FF' };
+}
+}
+</script>
+</body>
+</html>

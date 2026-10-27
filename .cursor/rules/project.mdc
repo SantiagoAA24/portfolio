@@ -1,0 +1,13 @@
+---
+description: Reglas del portafolio de Santiago
+alwaysApply: true
+---
+- Stack: Next.js (App Router) + TypeScript estricto, CSS plano con variables (sin Tailwind), MDX para casos y notas, next-intl para /en y /es.
+- Toda la información visual sale de styles/tokens.css. NUNCA escribas colores, tamaños de fuente, espacios ni radios a mano: usa var(--...).
+- Estilos de componentes en styles/components.css o CSS Modules que usen solo variables.
+- Estética: fondo oscuro, esquinas cuadradas (radius 0), bordes de 1px, acento pastel azul (--accent). Tipografías con next/font: Space Grotesk, Inter, JetBrains Mono.
+- Accesibilidad: HTML semántico, un h1 por página, foco visible (outline 2px var(--accent), offset 3px), contraste AA, alt en imágenes.
+- Todo texto visible va en los archivos de mensajes de next-intl, nunca fijo en componentes.
+- El contenido sale de docs/content. Si falta un dato, deja un marcador [así] visible; nunca inventes cifras, clientes ni logros.
+- Diseño de referencia en docs/design/<pantalla>/ (archivo .dc.html + README.md) y docs/design/system/ (README.md de marca, tokens.json, y components/<Nombre>/ con su README.md y preview.html; Cover no se implementa). Antes de construir una pantalla, léelos. Son referencia, no código para copiar: reescribe la pantalla como componentes de Next.js, cambia {{accent}} y los colores hex por variables de tokens.css, y ignora support.js y vendor/.
+- Antes de terminar una tarea: npm run lint y npm run build sin errores.

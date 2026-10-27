@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Santiago Acevedo — Case study, AI chatbot</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{text-decoration:none}
+a:hover{opacity:.85}
+</style>
+</helmet>
+<div id="top" style="width:100%;background:#0A0C0F;color:#E8ECEF;font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<!-- NAV -->
+<header style="border-bottom:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:16px 40px;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<a href="Main.dc.html" style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:14px;color:#E8ECEF"><span style="display:block;width:10px;height:10px;background:{{accent}}"></span>santiago.acevedo</a>
+<nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13px">
+<a href="Main.dc.html" style="color:{{accent}}">01 work</a>
+<a href="Main.dc.html" style="color:#9AA3AD">02 ai-demo</a>
+<a href="Main.dc.html" style="color:#9AA3AD">03 research</a>
+<a href="Main.dc.html" style="color:#9AA3AD">04 stack</a>
+<a href="Main.dc.html" style="color:#9AA3AD">05 notes</a>
+</nav>
+<div style="display:flex;align-items:center;gap:12px">
+<div style="display:flex;border:1px solid #232830;font-family:'JetBrains Mono',monospace;font-size:12px">
+<a href="#" aria-label="English" style="padding:6px 10px;background:{{accent}};color:#0A0C0F">EN</a>
+<a href="#" aria-label="Español" style="padding:6px 10px;color:#9AA3AD">ES</a>
+</div>
+<a href="#" style="padding:8px 14px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:13px">CV ↓</a>
+</div>
+</div>
+</header>
+
+<!-- CASE HEADER -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:56px 40px 0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD"><a href="Main.dc.html" style="color:{{accent}}">← work</a> / 01 · ai-chatbot</div>
+<div style="margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">CASE STUDY · AI</div>
+<h1 style="margin:14px 0 0;max-width:900px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:68px;line-height:1.03;letter-spacing:-.025em">AI chatbot for <span style="color:{{accent}}">enterprise data</span></h1>
+<p style="margin:24px 0 0;max-width:760px;font-size:20px;color:#9AA3AD">A chatbot that answers questions and generates reports by combining semantic search with structured queries, built end to end on the OpenAI API.</p>
+</div>
+<div style="max-width:1200px;margin:48px auto 0;padding:0 40px">
+<div style="display:flex;flex-wrap:wrap;border-top:1px solid #232830;border-bottom:1px solid #232830">
+<div style="flex:1 1 220px;padding:22px 24px 22px 0"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">ROLE</div><div style="margin-top:6px">Designed and built end to end</div></div>
+<div style="flex:1 1 220px;padding:22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">CONTEXT</div><div style="margin-top:6px">Intelisoft · Energy-sector engineering platform</div></div>
+<div style="flex:1 1 220px;padding:22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">STATUS</div><div style="margin-top:6px;color:{{accent}}">Deploying on Azure</div></div>
+<div style="flex:1 1 220px;padding:22px 0 22px 24px;border-left:1px solid #232830"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">STACK</div><div style="margin-top:6px">OpenAI API · React · .NET API · Azure</div></div>
+</div>
+</div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section>
+<div style="max-width:1200px;margin:48px auto 0;padding:0 40px">
+<div style="padding:40px;background:#0F1216;border:1px solid #232830">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">ARCHITECTURE · SIMPLIFIED</div>
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:20px;font-family:'JetBrains Mono',monospace;font-size:14px">
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">User question</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="padding:16px 20px;border:1px solid {{accent}};color:{{accent}}">Semantic search</div>
+<div style="padding:16px 20px;border:1px solid {{accent}};color:{{accent}}">Structured queries</div>
+</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">LLM · OpenAI API</div>
+<span style="color:{{accent}};font-size:20px">→</span>
+<div style="padding:16px 20px;border:1px solid #232830;background:#12151A">Answer or report</div>
+</div>
+<div style="margin-top:28px;font-size:15px;color:#9AA3AD;max-width:680px">Semantic search finds the right context; structured queries return exact figures. The model combines both to answer in plain language or draft a report.</div>
+</div>
+</div>
+</section>
+
+<!-- ARTICLE -->
+<section>
+<div style="max-width:1200px;margin:0 auto;padding:72px 40px 24px;display:flex;flex-wrap:wrap;gap:56px">
+<aside style="flex:0 1 260px;min-width:200px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em;padding-bottom:12px;border-bottom:1px solid #232830">ON THIS PAGE</div>
+<div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px">
+<a href="#context" style="color:#E8ECEF">01 Context</a>
+<a href="#problem" style="color:#9AA3AD">02 The problem</a>
+<a href="#built" style="color:#9AA3AD">03 What I built</a>
+<a href="#decisions" style="color:#9AA3AD">04 Key decisions</a>
+<a href="#outcome" style="color:#9AA3AD">05 Outcome</a>
+</div>
+</aside>
+<div style="flex:1 1 560px;min-width:0;max-width:760px">
+
+<div id="context">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">01</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Context</h2>
+<p style="margin:16px 0 0;font-size:18px;color:#B9C0C8">I joined the frontend of an internal engineering-process platform for a contractor in the energy sector. Over two phases I built the React interface against a .NET REST backend and helped design the database’s entity-relationship model. The chatbot came next: [explain how the idea came up and who asked for it].</p>
+</div>
+
+<div id="problem" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">02</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">The problem</h2>
+<p style="margin:16px 0 0;font-size:18px;color:#B9C0C8">[In two or three sentences: what people needed to find or produce, and why it was slow or manual before.]</p>
+</div>
+
+<div id="built" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">03</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">What I built</h2>
+<div style="margin-top:20px;border-top:1px solid #232830">
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">01</span><span style="font-size:17px">Semantic search over enterprise data to retrieve the right context for each question</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">02</span><span style="font-size:17px">Structured queries for exact figures that a language model should not guess</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">03</span><span style="font-size:17px">Automatic report generation from the combined results</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">04</span><span style="font-size:17px">OpenAI API integration and the chat interface in React, from design to implementation</span></div>
+<div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid #232830"><span style="flex:none;width:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">05</span><span style="font-size:17px">Deployment on Azure, currently in progress</span></div>
+</div>
+</div>
+
+<div id="decisions" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">04</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Key decisions</h2>
+<div style="margin-top:20px;display:flex;flex-direction:column;gap:16px">
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">Why semantic search and structured queries together</div><p style="margin:10px 0 0;color:#9AA3AD">[Explain the trade-off: what each approach does well and where it fails on its own.]</p></div>
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">How the answers stay grounded</div><p style="margin:10px 0 0;color:#9AA3AD">[Describe how you reduced made-up answers: sources, validation, limits on what the model can claim.]</p></div>
+<div style="padding:24px;border:1px solid #232830;background:#12151A"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">What I would do differently</div><p style="margin:10px 0 0;color:#9AA3AD">[One honest lesson learned. It shows judgment.]</p></div>
+</div>
+</div>
+
+<div id="outcome" style="margin-top:56px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}};letter-spacing:.06em">05</div>
+<h2 style="margin:10px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em">Outcome</h2>
+<div style="margin-top:20px;display:flex;flex-wrap:wrap;border-top:1px solid #232830;border-bottom:1px solid #232830">
+<div style="flex:1 1 200px;padding:24px 20px 24px 0"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+<div style="flex:1 1 200px;padding:24px 20px;border-left:1px solid #232830"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+<div style="flex:1 1 200px;padding:24px 0 24px 20px;border-left:1px solid #232830"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;color:{{accent}}">[00]</div><div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[what it measures]</div></div>
+</div>
+<div style="margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">BUILT WITH</div>
+<div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD">
+<span style="padding:5px 12px;border:1px solid #232830">OpenAI API</span><span style="padding:5px 12px;border:1px solid #232830">React</span><span style="padding:5px 12px;border:1px solid #232830">.NET API</span><span style="padding:5px 12px;border:1px solid #232830">Azure</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NEXT CASE + CONTACT -->
+<section style="border-top:1px solid #232830;background:#0F1216">
+<div style="max-width:1200px;margin:0 auto;padding:56px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 360px;min-width:0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">NEXT CASE · 02</div>
+<a href="Caso-robotica.dc.html" style="display:inline-block;margin-top:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1.15;color:#E8ECEF">Control interfaces for robots and vision models <span style="color:{{accent}}">→</span></a>
+</div>
+<a href="Main.dc.html" style="padding:14px 22px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:14px">← All work</a>
+</div>
+</section>
+<section style="border-top:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:72px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<h2 style="margin:0;flex:1 1 480px;max-width:720px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-.025em">Want something like this in your product?</h2>
+<div style="display:flex;flex-wrap:wrap;gap:14px;font-family:'JetBrains Mono',monospace;font-size:14px">
+<a href="mailto:santiago.acevedo.m24@gmail.com" style="padding:14px 22px;background:{{accent}};color:#0A0C0F;font-weight:500">Get in touch →</a>
+<a href="#" style="padding:14px 22px;border:1px solid #E8ECEF;color:#E8ECEF">CV · English ↓</a>
+</div>
+</div>
+<div style="border-top:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:24px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">
+<span>© 2026 Andres Santiago Acevedo Mancera</span><span>Bogotá, Colombia · UTC−5</span>
+</div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7DB8FF","options":["#7DB8FF","#38BDF8","#A99BFF"]},"$preview":{"width":1440,"height":3300}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7DB8FF' };
+}
+}
+</script>
+</body>
+</html>

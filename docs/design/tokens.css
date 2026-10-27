@@ -1,0 +1,68 @@
+/* Terminal — design tokens. Single source of truth for the portfolio.
+   Mirror of the "Terminal" design system. Never hard-code these values elsewhere. */
+
+:root {
+  /* Color */
+  --bg: #0a0c0f;
+  --surface: #12151a;
+  --surface-sunken: #0f1216;
+  --line: #232830;
+  --line-strong: #6b7480;
+  --text: #e8ecef;
+  --text-body: #b9c0c8;
+  --text-muted: #9aa3ad;
+  --accent: #7db8ff;
+  --on-accent: #0a0c0f;
+  --accent-cyan: #38bdf8;
+  --accent-lavender: #a99bff;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-14: 56px;
+  --space-18: 72px;
+  --space-22: 88px;
+  --space-24: 96px;
+
+  /* Radius */
+  --radius-0: 0;
+  --radius-full: 50%;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-gutter: 40px;
+  --measure-article: 760px;
+  --measure-note: 800px;
+  --header-height: 76px;
+
+  /* Font families. next/font sets --font-space-grotesk, --font-inter and
+     --font-jetbrains-mono on <html>; the fallbacks keep these working without it. */
+  --font-display: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
+  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Alternate accents: <html data-accent="cyan"> or "lavender". */
+[data-accent="cyan"] { --accent: var(--accent-cyan); }
+[data-accent="lavender"] { --accent: var(--accent-lavender); }
+
+/* Type styles */
+.display-xl { font-family: var(--font-display); font-size: 96px; line-height: 96px; font-weight: 700; letter-spacing: -0.035em; }
+.h1 { font-family: var(--font-display); font-size: 68px; line-height: 70px; font-weight: 700; letter-spacing: -0.025em; }
+.h2 { font-family: var(--font-display); font-size: 44px; line-height: 48px; font-weight: 700; letter-spacing: -0.02em; }
+.h2-article { font-family: var(--font-display); font-size: 32px; line-height: 37px; font-weight: 700; letter-spacing: -0.02em; }
+.h3 { font-family: var(--font-display); font-size: 30px; line-height: 35px; font-weight: 700; letter-spacing: -0.01em; }
+.h4 { font-family: var(--font-display); font-size: 22px; line-height: 28px; font-weight: 500; }
+.lead { font-family: var(--font-body); font-size: 20px; line-height: 31px; font-weight: 400; }
+.body-lg { font-family: var(--font-body); font-size: 18px; line-height: 28px; font-weight: 400; }
+.body { font-family: var(--font-body); font-size: 16px; line-height: 25px; font-weight: 400; }
+.small { font-family: var(--font-body); font-size: 14px; line-height: 22px; font-weight: 400; }
+.label { font-family: var(--font-mono); font-size: 12px; line-height: 18px; font-weight: 500; letter-spacing: 0.06em; }
+.meta { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 400; }
+.button { font-family: var(--font-mono); font-size: 14px; line-height: 20px; font-weight: 500; }

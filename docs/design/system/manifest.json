@@ -1,0 +1,49 @@
+{
+  "manifestVersion": 3,
+  "name": "Terminal",
+  "namespace": "Terminal",
+  "files": [
+    "components/Button/README.md",
+    "components/Card/README.md",
+    "components/Chip/README.md",
+    "components/Label/README.md",
+    "components/Pipeline/README.md",
+    "components/Stat/README.md",
+    "components/bundle.css",
+    "tokens.css"
+  ],
+  "libraries": [],
+  "components": [
+    {
+      "name": "Button",
+      "group": "Actions",
+      "summary": "A square mono button in two forms: a filled btn-primary and an outlined btn-outline."
+    },
+    {
+      "name": "Card",
+      "group": "Content",
+      "summary": "A square bordered container on surface, used for decisions, notes, paper entries and the contact form."
+    },
+    {
+      "name": "Chip",
+      "group": "Content",
+      "summary": "A small bordered mono tag for technologies, categories and filters."
+    },
+    {
+      "name": "Label",
+      "group": "Content",
+      "summary": "The uppercase mono caption that sits above a heading, a number or a group of rows."
+    },
+    {
+      "name": "Pipeline",
+      "group": "Content",
+      "summary": "The architecture diagram: bordered mono steps joined by accent arrows, in place of screenshots of client work."
+    },
+    {
+      "name": "Stat",
+      "group": "Content",
+      "summary": "A big accent number with a short uppercase caption, for facts and results."
+    }
+  ],
+  "assetGroups": []
+}

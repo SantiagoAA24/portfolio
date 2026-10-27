@@ -1,0 +1,35 @@
+<!-- @dsCard height=288 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap">
+<style>
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--bg); }
+  .cover svg { position: absolute; left: 480px; top: 0; width: 480px; height: 288px; display: block; }
+  .cover .accent { fill: var(--accent); }
+  .cover .lavender { fill: var(--accent-lavender); }
+  .cover .cyan { fill: var(--accent-cyan); }
+  .cover .light { fill: var(--text); }
+  .cover .panel { fill: var(--surface); stroke: var(--line-strong); stroke-width: 1; }
+  .cover .dot { fill: var(--bg); }
+  .cover .name { position: absolute; left: 48px; bottom: 76px; width: 420px; margin: 0; font-family: var(--font-display); font-size: 88px; line-height: 84px; font-weight: 700; letter-spacing: -0.025em; color: var(--text); }
+  .cover .tag { position: absolute; left: 48px; bottom: 40px; width: 400px; margin: 0; font-family: var(--font-body); font-size: 14px; line-height: 22px; color: var(--text-muted); }
+</style>
+<div class="cover">
+  <!--
+    Blocks: accent 264×168 (11×7 steps of 24), lavender 96×120, cyan 72×96 bleeding right, text 96×96 bleeding bottom, surface panel 240×96 with line-strong stroke.
+    Arrangement: a staggered stack from one tall accent slab, satellites stepping right and off the right and bottom edges.
+    Pattern: a dot grid at 24px pitch (space-6) in ground color cut out of the accent slab; the system is precise, technical and mono.
+    Steps: 24px unit throughout; corners square (radius-0).
+  -->
+  <svg viewBox="0 0 480 288" role="img" aria-label="Palette blocks with a dot grid">
+    <rect class="accent" x="0" y="0" width="264" height="168"/>
+    <rect class="lavender" x="288" y="48" width="96" height="120"/>
+    <rect class="cyan" x="408" y="0" width="72" height="96"/>
+    <rect class="light" x="288" y="192" width="96" height="96"/>
+    <rect class="panel" x="24" y="192" width="240" height="96"/>
+    <circle class="dot" cx="36" cy="36" r="2.5"/><circle class="dot" cx="60" cy="36" r="2.5"/><circle class="dot" cx="84" cy="36" r="2.5"/><circle class="dot" cx="108" cy="36" r="2.5"/><circle class="dot" cx="132" cy="36" r="2.5"/><circle class="dot" cx="156" cy="36" r="2.5"/>
+    <circle class="dot" cx="36" cy="60" r="2.5"/><circle class="dot" cx="60" cy="60" r="2.5"/><circle class="dot" cx="84" cy="60" r="2.5"/><circle class="dot" cx="108" cy="60" r="2.5"/><circle class="dot" cx="132" cy="60" r="2.5"/><circle class="dot" cx="156" cy="60" r="2.5"/>
+    <circle class="dot" cx="36" cy="84" r="2.5"/><circle class="dot" cx="60" cy="84" r="2.5"/><circle class="dot" cx="84" cy="84" r="2.5"/><circle class="dot" cx="108" cy="84" r="2.5"/><circle class="dot" cx="132" cy="84" r="2.5"/><circle class="dot" cx="156" cy="84" r="2.5"/>
+    <circle class="dot" cx="36" cy="108" r="2.5"/><circle class="dot" cx="60" cy="108" r="2.5"/><circle class="dot" cx="84" cy="108" r="2.5"/><circle class="dot" cx="108" cy="108" r="2.5"/><circle class="dot" cx="132" cy="108" r="2.5"/><circle class="dot" cx="156" cy="108" r="2.5"/>
+  </svg>
+  <h1 class="name">Terminal</h1>
+  <p class="tag">Design system for Santiago Acevedo’s portfolio.</p>
+</div>

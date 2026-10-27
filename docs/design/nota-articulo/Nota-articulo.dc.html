@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Santiago Acevedo — Note</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+a{text-decoration:none}
+a:hover{opacity:.85}
+</style>
+</helmet>
+<div id="top" style="width:100%;background:#0A0C0F;color:#E8ECEF;font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<header style="border-bottom:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:16px 40px;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<a href="Main.dc.html" style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:14px;color:#E8ECEF"><span style="display:block;width:10px;height:10px;background:{{accent}}"></span>santiago.acevedo</a>
+<nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13px">
+<a href="Main.dc.html" style="color:#9AA3AD">01 work</a>
+<a href="Main.dc.html" style="color:#9AA3AD">02 ai-demo</a>
+<a href="Investigacion.dc.html" style="color:#9AA3AD">03 research</a>
+<a href="Main.dc.html" style="color:#9AA3AD">04 stack</a>
+<a href="Notas.dc.html" style="color:{{accent}}">05 notes</a>
+<a href="Contacto.dc.html" style="color:#9AA3AD">06 contact</a>
+</nav>
+<div style="display:flex;align-items:center;gap:12px">
+<div style="display:flex;border:1px solid #232830;font-family:'JetBrains Mono',monospace;font-size:12px">
+<a href="#" aria-label="English" style="padding:6px 10px;background:{{accent}};color:#0A0C0F">EN</a>
+<a href="#" aria-label="Español" style="padding:6px 10px;color:#9AA3AD">ES</a>
+</div>
+<a href="#" style="padding:8px 14px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:13px">CV ↓</a>
+</div>
+</div>
+</header>
+
+<article>
+<div style="max-width:800px;margin:0 auto;padding:56px 40px 0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD"><a href="Notas.dc.html" style="color:{{accent}}">← notes</a> / ai</div>
+<div style="margin-top:28px;display:inline-block;padding:5px 12px;border:1px solid #232830;font-family:'JetBrains Mono',monospace;font-size:12px;color:{{accent}};letter-spacing:.06em">AI</div>
+<h1 style="margin:18px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:52px;line-height:1.08;letter-spacing:-.025em">Mixing semantic search and structured queries in one chatbot</h1>
+<p style="margin:20px 0 0;font-size:21px;color:#9AA3AD">[One-sentence summary: the question this note answers.]</p>
+<div style="margin-top:28px;padding:20px 0;border-top:1px solid #232830;border-bottom:1px solid #232830;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+<img src="./assets/412b11065d1aa5673b415a3c14bb62ac.png" alt="Santiago Acevedo" style="display:block;width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid {{accent}}">
+<div style="flex:1 1 240px"><div style="font-weight:500">Santiago Acevedo</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">[Date] · [x] min read</div></div>
+<a href="#" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:{{accent}}">Share on LinkedIn ↗</a>
+</div>
+</div>
+
+<div style="max-width:800px;margin:0 auto;padding:40px 40px 0;font-size:19px;line-height:1.7;color:#C6CCD3">
+<p style="margin:0">[Opening paragraph: the situation and why it was hard. Keep it concrete.]</p>
+
+<h2 style="margin:48px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em;color:#E8ECEF">The two kinds of questions</h2>
+<p style="margin:16px 0 0">[Explain which questions need meaning (semantic search) and which need exact numbers (structured queries).]</p>
+
+<div style="margin:32px 0 0;padding:32px;border:1px solid #232830;background:#0F1216;font-family:'JetBrains Mono',monospace;font-size:13px;color:#9AA3AD;text-align:center">[Figure: simplified architecture diagram]</div>
+
+<h2 style="margin:48px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em;color:#E8ECEF">Putting them together</h2>
+<p style="margin:16px 0 0">[Describe how the two results reach the model and how the answer is produced.]</p>
+
+<div style="margin:28px 0 0;border:1px solid #232830;background:#12151A">
+<div style="padding:10px 16px;border-bottom:1px solid #232830;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">python · placeholder</div>
+<pre style="margin:0;padding:20px 16px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;color:#E8ECEF">def answer(question: str) -&gt; str:
+    context = semantic_search(question)
+    figures = run_structured_query(question)
+    return llm.generate(question, context, figures)</pre>
+</div>
+
+<blockquote style="margin:40px 0 0;padding:4px 0 4px 24px;border-left:3px solid {{accent}};font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:26px;line-height:1.35;color:#E8ECEF">[A one-line takeaway worth quoting.]</blockquote>
+
+<h2 style="margin:48px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;line-height:1.15;letter-spacing:-.02em;color:#E8ECEF">What I would do differently</h2>
+<p style="margin:16px 0 0">[One honest lesson learned.]</p>
+</div>
+
+<div style="max-width:800px;margin:0 auto;padding:56px 40px 0">
+<div style="padding:28px;border:1px solid #232830;background:#12151A;display:flex;flex-wrap:wrap;gap:20px;align-items:center">
+<img src="./assets/412b11065d1aa5673b415a3c14bb62ac.png" alt="Santiago Acevedo" style="display:block;width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid {{accent}}">
+<div style="flex:1 1 320px"><div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:20px">Written by Santiago Acevedo</div><div style="margin-top:4px;color:#9AA3AD;font-size:15px">Fullstack engineer building AI products. Open to remote roles.</div></div>
+<a href="Contacto.dc.html" style="padding:12px 20px;background:{{accent}};color:#0A0C0F;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500">Get in touch →</a>
+</div>
+</div>
+</article>
+
+<section style="margin-top:72px;border-top:1px solid #232830;background:#0F1216">
+<div style="max-width:1200px;margin:0 auto;padding:48px 40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 360px;min-width:0">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD;letter-spacing:.06em">NEXT NOTE</div>
+<a href="Notas.dc.html" style="display:inline-block;margin-top:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;line-height:1.2;color:#E8ECEF">One hexagonal backend for robotics, AI and web teams <span style="color:{{accent}}">→</span></a>
+</div>
+<a href="Notas.dc.html" style="padding:14px 22px;border:1px solid #E8ECEF;color:#E8ECEF;font-family:'JetBrains Mono',monospace;font-size:14px">← All notes</a>
+</div>
+<div style="border-top:1px solid #232830">
+<div style="max-width:1200px;margin:0 auto;padding:24px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9AA3AD">
+<span>© 2026 Andres Santiago Acevedo Mancera</span><span>Bogotá, Colombia · UTC−5</span>
+</div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7DB8FF","options":["#7DB8FF","#38BDF8","#A99BFF"]},"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7DB8FF' };
+}
+}
+</script>
+</body>
+</html>
